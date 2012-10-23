@@ -1,5 +1,5 @@
 //
-//  HRKViewController.h
+//  UIColor+Heroku.h
 //  Heroku
 //
 //  Created by Zach Williams on 10/23/12.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HRKViewController : UIViewController
+@interface UIColor (Heroku)
+
++ (UIColor *)hrk_backgroundColor;
 
 @end

@@ -7,20 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7115CA5EF7A941DF82D9388B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 568B0AF723B34A3297D0DAA8 /* libPods.a */; };
 		790247CF16374A3000B912C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790247CE16374A3000B912C6 /* UIKit.framework */; };
 		790247D116374A3000B912C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790247D016374A3000B912C6 /* Foundation.framework */; };
 		790247D316374A3000B912C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790247D216374A3000B912C6 /* CoreGraphics.framework */; };
 		790247D916374A3000B912C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 790247D716374A3000B912C6 /* InfoPlist.strings */; };
 		790247DB16374A3000B912C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 790247DA16374A3000B912C6 /* main.m */; };
 		790247DF16374A3000B912C6 /* HRKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 790247DE16374A3000B912C6 /* HRKAppDelegate.m */; };
-		790247E116374A3000B912C6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 790247E016374A3000B912C6 /* Default.png */; };
-		790247E316374A3000B912C6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 790247E216374A3000B912C6 /* Default@2x.png */; };
-		790247E516374A3000B912C6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 790247E416374A3000B912C6 /* Default-568h@2x.png */; };
-		790247E816374A3000B912C6 /* HRKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790247E716374A3000B912C6 /* HRKViewController.m */; };
-		790247EB16374A3000B912C6 /* HRKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 790247E916374A3000B912C6 /* HRKViewController.xib */; };
+		79932A0116374B9C009BF83F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329F916374B9C009BF83F /* Default-568h@2x.png */; };
+		79932A0216374B9C009BF83F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FA16374B9C009BF83F /* Default.png */; };
+		79932A0316374B9C009BF83F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FB16374B9C009BF83F /* Default@2x.png */; };
+		79932A0416374B9C009BF83F /* nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FC16374B9C009BF83F /* nav.png */; };
+		79932A0616374B9C009BF83F /* nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FE16374B9C009BF83F /* nav@2x.png */; };
+		79932A0716374B9C009BF83F /* nav_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FF16374B9C009BF83F /* nav_shadow.png */; };
+		79932A0816374B9C009BF83F /* nav_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79932A0016374B9C009BF83F /* nav_shadow@2x.png */; };
+		79932A201637511F009BF83F /* HRKStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A1E1637511F009BF83F /* HRKStatusViewController.m */; };
+		79932A211637511F009BF83F /* HRKStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79932A1F1637511F009BF83F /* HRKStatusViewController.xib */; };
+		79932A251637572F009BF83F /* HRKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A231637572F009BF83F /* HRKTableViewController.m */; };
+		79932A2D16375824009BF83F /* UIColor+Heroku.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A2C16375824009BF83F /* UIColor+Heroku.m */; };
+		79932A31163758F8009BF83F /* HRKDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A30163758F8009BF83F /* HRKDataModel.m */; };
+		79932A331637590F009BF83F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79932A321637590F009BF83F /* CoreData.framework */; };
+		79932A3616375ACB009BF83F /* Heroku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */; };
+		79932A3916375B21009BF83F /* HRKIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A3816375B21009BF83F /* HRKIncrementalStore.m */; };
+		79F1606316375ED500AC2AAA /* HRKAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F1606216375ED400AC2AAA /* HRKAPIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		568B0AF723B34A3297D0DAA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		74BD5A3637AF4589B5B466F9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		790247CA16374A3000B912C6 /* Heroku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heroku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		790247CE16374A3000B912C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		790247D016374A3000B912C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -29,14 +43,30 @@
 		790247D816374A3000B912C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		790247DA16374A3000B912C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		790247DC16374A3000B912C6 /* Heroku-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Heroku-Prefix.pch"; sourceTree = "<group>"; };
-		790247DD16374A3000B912C6 /* HRKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRKAppDelegate.h; sourceTree = "<group>"; };
-		790247DE16374A3000B912C6 /* HRKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRKAppDelegate.m; sourceTree = "<group>"; };
-		790247E016374A3000B912C6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		790247E216374A3000B912C6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		790247E416374A3000B912C6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		790247E616374A3000B912C6 /* HRKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRKViewController.h; sourceTree = "<group>"; };
-		790247E716374A3000B912C6 /* HRKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRKViewController.m; sourceTree = "<group>"; };
-		790247EA16374A3000B912C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HRKViewController.xib; sourceTree = "<group>"; };
+		790247DD16374A3000B912C6 /* HRKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HRKAppDelegate.h; path = Heroku/HRKAppDelegate.h; sourceTree = "<group>"; };
+		790247DE16374A3000B912C6 /* HRKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HRKAppDelegate.m; path = Heroku/HRKAppDelegate.m; sourceTree = "<group>"; };
+		799329F916374B9C009BF83F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		799329FA16374B9C009BF83F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		799329FB16374B9C009BF83F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		799329FC16374B9C009BF83F /* nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav.png; sourceTree = "<group>"; };
+		799329FE16374B9C009BF83F /* nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav@2x.png"; sourceTree = "<group>"; };
+		799329FF16374B9C009BF83F /* nav_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_shadow.png; sourceTree = "<group>"; };
+		79932A0016374B9C009BF83F /* nav_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_shadow@2x.png"; sourceTree = "<group>"; };
+		79932A1D1637511F009BF83F /* HRKStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKStatusViewController.h; sourceTree = "<group>"; };
+		79932A1E1637511F009BF83F /* HRKStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKStatusViewController.m; sourceTree = "<group>"; };
+		79932A1F1637511F009BF83F /* HRKStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKStatusViewController.xib; sourceTree = "<group>"; };
+		79932A221637572F009BF83F /* HRKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKTableViewController.h; sourceTree = "<group>"; };
+		79932A231637572F009BF83F /* HRKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKTableViewController.m; sourceTree = "<group>"; };
+		79932A2B16375824009BF83F /* UIColor+Heroku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Heroku.h"; sourceTree = "<group>"; };
+		79932A2C16375824009BF83F /* UIColor+Heroku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Heroku.m"; sourceTree = "<group>"; };
+		79932A2F163758F8009BF83F /* HRKDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKDataModel.h; sourceTree = "<group>"; };
+		79932A30163758F8009BF83F /* HRKDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKDataModel.m; sourceTree = "<group>"; };
+		79932A321637590F009BF83F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		79932A3516375ACB009BF83F /* Heroku.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Heroku.xcdatamodel; sourceTree = "<group>"; };
+		79932A3716375B21009BF83F /* HRKIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIncrementalStore.h; sourceTree = "<group>"; };
+		79932A3816375B21009BF83F /* HRKIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIncrementalStore.m; sourceTree = "<group>"; };
+		79F1606116375ED400AC2AAA /* HRKAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKAPIClient.h; sourceTree = "<group>"; };
+		79F1606216375ED400AC2AAA /* HRKAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKAPIClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +74,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79932A331637590F009BF83F /* CoreData.framework in Frameworks */,
 				790247CF16374A3000B912C6 /* UIKit.framework in Frameworks */,
 				790247D116374A3000B912C6 /* Foundation.framework in Frameworks */,
 				790247D316374A3000B912C6 /* CoreGraphics.framework in Frameworks */,
+				7115CA5EF7A941DF82D9388B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +88,16 @@
 		790247BF16374A3000B912C6 = {
 			isa = PBXGroup;
 			children = (
-				790247D416374A3000B912C6 /* Heroku */,
+				790247DD16374A3000B912C6 /* HRKAppDelegate.h */,
+				790247DE16374A3000B912C6 /* HRKAppDelegate.m */,
+				79932A27163757F6009BF83F /* Classes */,
+				79932A1116374C20009BF83F /* Controllers */,
+				79932A2E163758D9009BF83F /* Models */,
+				79932A1516374C3E009BF83F /* Views */,
+				790247D516374A3000B912C6 /* Supporting Files */,
 				790247CD16374A3000B912C6 /* Frameworks */,
 				790247CB16374A3000B912C6 /* Products */,
+				74BD5A3637AF4589B5B466F9 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,24 +112,13 @@
 		790247CD16374A3000B912C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79932A321637590F009BF83F /* CoreData.framework */,
 				790247CE16374A3000B912C6 /* UIKit.framework */,
 				790247D016374A3000B912C6 /* Foundation.framework */,
 				790247D216374A3000B912C6 /* CoreGraphics.framework */,
+				568B0AF723B34A3297D0DAA8 /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		790247D416374A3000B912C6 /* Heroku */ = {
-			isa = PBXGroup;
-			children = (
-				790247DD16374A3000B912C6 /* HRKAppDelegate.h */,
-				790247DE16374A3000B912C6 /* HRKAppDelegate.m */,
-				790247E616374A3000B912C6 /* HRKViewController.h */,
-				790247E716374A3000B912C6 /* HRKViewController.m */,
-				790247E916374A3000B912C6 /* HRKViewController.xib */,
-				790247D516374A3000B912C6 /* Supporting Files */,
-			);
-			path = Heroku;
 			sourceTree = "<group>";
 		};
 		790247D516374A3000B912C6 /* Supporting Files */ = {
@@ -100,11 +128,71 @@
 				790247D716374A3000B912C6 /* InfoPlist.strings */,
 				790247DA16374A3000B912C6 /* main.m */,
 				790247DC16374A3000B912C6 /* Heroku-Prefix.pch */,
-				790247E016374A3000B912C6 /* Default.png */,
-				790247E216374A3000B912C6 /* Default@2x.png */,
-				790247E416374A3000B912C6 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = Heroku;
+			sourceTree = "<group>";
+		};
+		799329F816374B9C009BF83F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				799329F916374B9C009BF83F /* Default-568h@2x.png */,
+				799329FA16374B9C009BF83F /* Default.png */,
+				799329FB16374B9C009BF83F /* Default@2x.png */,
+				799329FC16374B9C009BF83F /* nav.png */,
+				799329FE16374B9C009BF83F /* nav@2x.png */,
+				799329FF16374B9C009BF83F /* nav_shadow.png */,
+				79932A0016374B9C009BF83F /* nav_shadow@2x.png */,
+			);
+			name = Images;
+			path = ../Images;
+			sourceTree = "<group>";
+		};
+		79932A1116374C20009BF83F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79932A1D1637511F009BF83F /* HRKStatusViewController.h */,
+				79932A1E1637511F009BF83F /* HRKStatusViewController.m */,
+				79932A221637572F009BF83F /* HRKTableViewController.h */,
+				79932A231637572F009BF83F /* HRKTableViewController.m */,
+			);
+			name = Controllers;
+			path = Heroku/Code;
+			sourceTree = "<group>";
+		};
+		79932A1516374C3E009BF83F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				799329F816374B9C009BF83F /* Images */,
+				79932A1F1637511F009BF83F /* HRKStatusViewController.xib */,
+			);
+			name = Views;
+			path = Heroku/Code;
+			sourceTree = "<group>";
+		};
+		79932A27163757F6009BF83F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79932A2B16375824009BF83F /* UIColor+Heroku.h */,
+				79932A2C16375824009BF83F /* UIColor+Heroku.m */,
+			);
+			name = Classes;
+			path = Heroku/Code;
+			sourceTree = "<group>";
+		};
+		79932A2E163758D9009BF83F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */,
+				79932A2F163758F8009BF83F /* HRKDataModel.h */,
+				79932A30163758F8009BF83F /* HRKDataModel.m */,
+				79932A3716375B21009BF83F /* HRKIncrementalStore.h */,
+				79932A3816375B21009BF83F /* HRKIncrementalStore.m */,
+				79F1606116375ED400AC2AAA /* HRKAPIClient.h */,
+				79F1606216375ED400AC2AAA /* HRKAPIClient.m */,
+			);
+			name = Models;
+			path = Heroku/Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +205,7 @@
 				790247C616374A3000B912C6 /* Sources */,
 				790247C716374A3000B912C6 /* Frameworks */,
 				790247C816374A3000B912C6 /* Resources */,
+				8CAF366B403A469B8B819420 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,14 +249,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				790247D916374A3000B912C6 /* InfoPlist.strings in Resources */,
-				790247E116374A3000B912C6 /* Default.png in Resources */,
-				790247E316374A3000B912C6 /* Default@2x.png in Resources */,
-				790247E516374A3000B912C6 /* Default-568h@2x.png in Resources */,
-				790247EB16374A3000B912C6 /* HRKViewController.xib in Resources */,
+				79932A0116374B9C009BF83F /* Default-568h@2x.png in Resources */,
+				79932A0216374B9C009BF83F /* Default.png in Resources */,
+				79932A0316374B9C009BF83F /* Default@2x.png in Resources */,
+				79932A0416374B9C009BF83F /* nav.png in Resources */,
+				79932A0616374B9C009BF83F /* nav@2x.png in Resources */,
+				79932A0716374B9C009BF83F /* nav_shadow.png in Resources */,
+				79932A0816374B9C009BF83F /* nav_shadow@2x.png in Resources */,
+				79932A211637511F009BF83F /* HRKStatusViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CAF366B403A469B8B819420 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		790247C616374A3000B912C6 /* Sources */ = {
@@ -176,7 +286,13 @@
 			files = (
 				790247DB16374A3000B912C6 /* main.m in Sources */,
 				790247DF16374A3000B912C6 /* HRKAppDelegate.m in Sources */,
-				790247E816374A3000B912C6 /* HRKViewController.m in Sources */,
+				79932A201637511F009BF83F /* HRKStatusViewController.m in Sources */,
+				79932A251637572F009BF83F /* HRKTableViewController.m in Sources */,
+				79932A2D16375824009BF83F /* UIColor+Heroku.m in Sources */,
+				79932A31163758F8009BF83F /* HRKDataModel.m in Sources */,
+				79932A3616375ACB009BF83F /* Heroku.xcdatamodeld in Sources */,
+				79932A3916375B21009BF83F /* HRKIncrementalStore.m in Sources */,
+				79F1606316375ED500AC2AAA /* HRKAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +305,6 @@
 				790247D816374A3000B912C6 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		790247E916374A3000B912C6 /* HRKViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				790247EA16374A3000B912C6 /* en */,
-			);
-			name = HRKViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -253,6 +361,7 @@
 		};
 		790247EF16374A3000B912C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74BD5A3637AF4589B5B466F9 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Heroku/Heroku-Prefix.pch";
@@ -264,6 +373,7 @@
 		};
 		790247F016374A3000B912C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74BD5A3637AF4589B5B466F9 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Heroku/Heroku-Prefix.pch";
@@ -292,8 +402,22 @@
 				790247F016374A3000B912C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79932A3516375ACB009BF83F /* Heroku.xcdatamodel */,
+			);
+			currentVersion = 79932A3516375ACB009BF83F /* Heroku.xcdatamodel */;
+			path = Heroku.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 790247C116374A3000B912C6 /* Project object */;
 }

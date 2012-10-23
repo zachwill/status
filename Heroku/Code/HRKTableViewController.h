@@ -1,5 +1,5 @@
 //
-//  HRKAppDelegate.h
+//  HRKTableViewController.h
 //  Heroku
 //
 //  Created by Zach Williams on 10/23/12.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface HRKAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface HRKTableViewController : UITableViewController
 
 @end
