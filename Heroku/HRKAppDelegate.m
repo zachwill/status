@@ -8,7 +8,7 @@
 
 #import "HRKAppDelegate.h"
 #import "HRKStatusViewController.h"
-#import "HRKTableViewController.h"
+#import "HRKIssuesViewController.h"
 #import "HRKTheme.h"
 
 @implementation HRKAppDelegate
@@ -18,8 +18,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Root view controller
-    HRKTableViewController *tableViewController = [[HRKTableViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+    HRKIssuesViewController *issuesVC = [[HRKIssuesViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:issuesVC];
     [self.window makeKeyAndVisible];
     
     // UIAppearance styling

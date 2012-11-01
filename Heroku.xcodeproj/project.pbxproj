@@ -18,6 +18,8 @@
 		795451C416424CE300C182FB /* HRKIssueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795451C316424CE300C182FB /* HRKIssueCell.xib */; };
 		795451C7164250C500C182FB /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C6164250C500C182FB /* Issue.m */; };
 		795451CA1642558300C182FB /* HRKIssueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C91642558300C182FB /* HRKIssueCell.m */; };
+		795451CD1642601600C182FB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CB1642601600C182FB /* back.png */; };
+		795451CE1642601600C182FB /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CC1642601600C182FB /* back@2x.png */; };
 		79932A0116374B9C009BF83F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329F916374B9C009BF83F /* Default-568h@2x.png */; };
 		79932A0216374B9C009BF83F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FA16374B9C009BF83F /* Default.png */; };
 		79932A0316374B9C009BF83F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FB16374B9C009BF83F /* Default@2x.png */; };
@@ -27,7 +29,7 @@
 		79932A0816374B9C009BF83F /* nav_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79932A0016374B9C009BF83F /* nav_shadow@2x.png */; };
 		79932A201637511F009BF83F /* HRKStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A1E1637511F009BF83F /* HRKStatusViewController.m */; };
 		79932A211637511F009BF83F /* HRKStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79932A1F1637511F009BF83F /* HRKStatusViewController.xib */; };
-		79932A251637572F009BF83F /* HRKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A231637572F009BF83F /* HRKTableViewController.m */; };
+		79932A251637572F009BF83F /* HRKIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A231637572F009BF83F /* HRKIssuesViewController.m */; };
 		79932A31163758F8009BF83F /* HRKDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A30163758F8009BF83F /* HRKDataModel.m */; };
 		79932A331637590F009BF83F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79932A321637590F009BF83F /* CoreData.framework */; };
 		79932A3616375ACB009BF83F /* Heroku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */; };
@@ -59,6 +61,8 @@
 		795451C6164250C500C182FB /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
 		795451C81642558300C182FB /* HRKIssueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssueCell.h; sourceTree = "<group>"; };
 		795451C91642558300C182FB /* HRKIssueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssueCell.m; sourceTree = "<group>"; };
+		795451CB1642601600C182FB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		795451CC1642601600C182FB /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		799329F916374B9C009BF83F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		799329FA16374B9C009BF83F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		799329FB16374B9C009BF83F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -69,8 +73,8 @@
 		79932A1D1637511F009BF83F /* HRKStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKStatusViewController.h; sourceTree = "<group>"; };
 		79932A1E1637511F009BF83F /* HRKStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKStatusViewController.m; sourceTree = "<group>"; };
 		79932A1F1637511F009BF83F /* HRKStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKStatusViewController.xib; sourceTree = "<group>"; };
-		79932A221637572F009BF83F /* HRKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKTableViewController.h; sourceTree = "<group>"; };
-		79932A231637572F009BF83F /* HRKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKTableViewController.m; sourceTree = "<group>"; };
+		79932A221637572F009BF83F /* HRKIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssuesViewController.h; sourceTree = "<group>"; };
+		79932A231637572F009BF83F /* HRKIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssuesViewController.m; sourceTree = "<group>"; };
 		79932A2F163758F8009BF83F /* HRKDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKDataModel.h; sourceTree = "<group>"; };
 		79932A30163758F8009BF83F /* HRKDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKDataModel.m; sourceTree = "<group>"; };
 		79932A321637590F009BF83F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -157,6 +161,8 @@
 				799329F916374B9C009BF83F /* Default-568h@2x.png */,
 				799329FA16374B9C009BF83F /* Default.png */,
 				799329FB16374B9C009BF83F /* Default@2x.png */,
+				795451CB1642601600C182FB /* back.png */,
+				795451CC1642601600C182FB /* back@2x.png */,
 				799329FC16374B9C009BF83F /* nav.png */,
 				799329FE16374B9C009BF83F /* nav@2x.png */,
 				799329FF16374B9C009BF83F /* nav_shadow.png */,
@@ -173,8 +179,8 @@
 			children = (
 				79932A1D1637511F009BF83F /* HRKStatusViewController.h */,
 				79932A1E1637511F009BF83F /* HRKStatusViewController.m */,
-				79932A221637572F009BF83F /* HRKTableViewController.h */,
-				79932A231637572F009BF83F /* HRKTableViewController.m */,
+				79932A221637572F009BF83F /* HRKIssuesViewController.h */,
+				79932A231637572F009BF83F /* HRKIssuesViewController.m */,
 			);
 			name = Controllers;
 			path = Heroku/Code;
@@ -287,6 +293,8 @@
 				79F160721637C4FE00AC2AAA /* Icon.png in Resources */,
 				79F160731637C4FE00AC2AAA /* Icon@2x.png in Resources */,
 				795451C416424CE300C182FB /* HRKIssueCell.xib in Resources */,
+				795451CD1642601600C182FB /* back.png in Resources */,
+				795451CE1642601600C182FB /* back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +325,7 @@
 				790247DB16374A3000B912C6 /* main.m in Sources */,
 				790247DF16374A3000B912C6 /* HRKAppDelegate.m in Sources */,
 				79932A201637511F009BF83F /* HRKStatusViewController.m in Sources */,
-				79932A251637572F009BF83F /* HRKTableViewController.m in Sources */,
+				79932A251637572F009BF83F /* HRKIssuesViewController.m in Sources */,
 				79932A31163758F8009BF83F /* HRKDataModel.m in Sources */,
 				79932A3616375ACB009BF83F /* Heroku.xcdatamodeld in Sources */,
 				79932A3916375B21009BF83F /* HRKIncrementalStore.m in Sources */,

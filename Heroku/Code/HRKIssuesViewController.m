@@ -6,14 +6,15 @@
 //  Copyright (c) 2012 Zach Williams. All rights reserved.
 //
 
-#import "HRKTableViewController.h"
+#import "HRKIssuesViewController.h"
 #import <CoreData/CoreData.h>
 #import "HRKDataModel.h"
 #import "HRKTheme.h"
 #import "Issue.h"
 #import "HRKIssueCell.h"
+#import "HRKStatusViewController.h"
 
-@interface HRKTableViewController () <NSFetchedResultsControllerDelegate>
+@interface HRKIssuesViewController () <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
@@ -24,7 +25,7 @@ static NSString * const kCellIdentifier = @"Issue";
 static const CGFloat kCellHeight = 100.0f;
 
 
-@implementation HRKTableViewController
+@implementation HRKIssuesViewController
 
 - (void)viewDidLoad
 {
@@ -107,8 +108,8 @@ static const CGFloat kCellHeight = 100.0f;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-     // Pass the selected object to the new view controller.
-     // [self.navigationController pushViewController:detailViewController animated:YES];
+    HRKStatusViewController *statusViewController = [[HRKStatusViewController alloc] init];
+    [self.navigationController pushViewController:statusViewController animated:YES];
 }
 
 @end

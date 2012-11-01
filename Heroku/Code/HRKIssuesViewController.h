@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HRKTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@interface HRKIssuesViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 
