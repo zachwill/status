@@ -7,16 +7,12 @@
 //
 
 #import "HRKIssueCell.h"
+#import "Issue.h"
 
 @implementation HRKIssueCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // Initialization code
-    }
-    return self;
+- (void)setIssue:(Issue *)issue {
+    self.title.text = issue.title;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

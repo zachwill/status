@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class Issue;
+
 @interface HRKIssueCell : UITableViewCell
 
 @property (nonatomic, weak) IBOutlet UILabel *title;
+@property (nonatomic, strong) Issue *issue;
 
 @end

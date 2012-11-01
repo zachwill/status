@@ -95,7 +95,7 @@ static const CGFloat kCellHeight = 100.0f;
     HRKIssueCell *cell = (HRKIssueCell *)[tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
     
     Issue *issue = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.title.text = issue.title;
+    cell.issue = issue;
     
     return cell;
 }
