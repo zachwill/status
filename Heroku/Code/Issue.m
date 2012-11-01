@@ -7,6 +7,7 @@
 //
 
 #import "Issue.h"
+#import "Update.h"
 
 
 @implementation Issue

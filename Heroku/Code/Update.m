@@ -14,13 +14,13 @@
 
 @dynamic contents;
 @dynamic created_at;
-@dynamic update_type;
-@dynamic updated_at;
-@dynamic title;
+@dynamic incident_id;
 @dynamic status_dev;
 @dynamic status_prod;
-@dynamic incident_id;
+@dynamic title;
 @dynamic update_id;
+@dynamic update_type;
+@dynamic updated_at;
 @dynamic issue;
 
 @end

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class Update;
 
 @interface Issue : NSManagedObject
 
@@ -19,14 +20,19 @@
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSNumber * upcoming;
 @property (nonatomic, retain) NSDate * updated_at;
-@property (nonatomic, retain) NSSet *updates;
+@property (nonatomic, retain) NSOrderedSet *updates;
 @end
 
 @interface Issue (CoreDataGeneratedAccessors)
 
-- (void)addUpdatesObject:(NSManagedObject *)value;
-- (void)removeUpdatesObject:(NSManagedObject *)value;
-- (void)addUpdates:(NSSet *)values;
-- (void)removeUpdates:(NSSet *)values;
-
+- (void)insertObject:(Update *)value inUpdatesAtIndex:(NSUInteger)idx;
+- (void)removeObjectFromUpdatesAtIndex:(NSUInteger)idx;
+- (void)insertUpdates:(NSArray *)value atIndexes:(NSIndexSet *)indexes;
+- (void)removeUpdatesAtIndexes:(NSIndexSet *)indexes;
+- (void)replaceObjectInUpdatesAtIndex:(NSUInteger)idx withObject:(Update *)value;
+- (void)replaceUpdatesAtIndexes:(NSIndexSet *)indexes withUpdates:(NSArray *)values;
+- (void)addUpdatesObject:(Update *)value;
+- (void)removeUpdatesObject:(Update *)value;
+- (void)addUpdates:(NSOrderedSet *)values;
+- (void)removeUpdates:(NSOrderedSet *)values;
 @end

@@ -8,11 +8,13 @@
 
 #import "HRKIssueCell.h"
 #import "Issue.h"
+#import "Update.h"
 
 @implementation HRKIssueCell
 
 - (void)setIssue:(Issue *)issue {
     self.title.text = issue.title;
+    self.description.text = [issue.updates[0] contents];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

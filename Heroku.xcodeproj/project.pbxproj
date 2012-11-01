@@ -1,1461 +1,498 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>10E11CCAC2F94C57A7438F11</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>568B0AF723B34A3297D0DAA8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>66955FB39A30441898097F47</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-		</dict>
-		<key>7115CA5EF7A941DF82D9388B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>568B0AF723B34A3297D0DAA8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>74BD5A3637AF4589B5B466F9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>790247BF16374A3000B912C6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>790247DD16374A3000B912C6</string>
-				<string>790247DE16374A3000B912C6</string>
-				<string>79932A27163757F6009BF83F</string>
-				<string>79932A1116374C20009BF83F</string>
-				<string>79932A2E163758D9009BF83F</string>
-				<string>79932A1516374C3E009BF83F</string>
-				<string>790247D516374A3000B912C6</string>
-				<string>790247CD16374A3000B912C6</string>
-				<string>790247CB16374A3000B912C6</string>
-				<string>74BD5A3637AF4589B5B466F9</string>
-				<string>10E11CCAC2F94C57A7438F11</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247C116374A3000B912C6</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>HRK</string>
-				<key>LastUpgradeCheck</key>
-				<string>0450</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Zach Williams</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>790247C416374A3000B912C6</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>790247BF16374A3000B912C6</string>
-			<key>productRefGroup</key>
-			<string>790247CB16374A3000B912C6</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>790247C916374A3000B912C6</string>
-			</array>
-		</dict>
-		<key>790247C416374A3000B912C6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>790247EC16374A3000B912C6</string>
-				<string>790247ED16374A3000B912C6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>790247C616374A3000B912C6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>790247DB16374A3000B912C6</string>
-				<string>790247DF16374A3000B912C6</string>
-				<string>79932A201637511F009BF83F</string>
-				<string>79932A251637572F009BF83F</string>
-				<string>79932A31163758F8009BF83F</string>
-				<string>79932A3616375ACB009BF83F</string>
-				<string>79932A3916375B21009BF83F</string>
-				<string>79F1606316375ED500AC2AAA</string>
-				<string>795451C2164204A700C182FB</string>
-				<string>795451CA1642558300C182FB</string>
-				<string>7945900C1642E8590095B495</string>
-				<string>7945900F1642EDC30095B495</string>
-				<string>794590121642EDC30095B495</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>790247C716374A3000B912C6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79932A331637590F009BF83F</string>
-				<string>790247CF16374A3000B912C6</string>
-				<string>790247D116374A3000B912C6</string>
-				<string>790247D316374A3000B912C6</string>
-				<string>7115CA5EF7A941DF82D9388B</string>
-				<string>A87CC05B83054A7C99828F0C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>790247C816374A3000B912C6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>790247D916374A3000B912C6</string>
-				<string>79932A0116374B9C009BF83F</string>
-				<string>79932A0216374B9C009BF83F</string>
-				<string>79932A0316374B9C009BF83F</string>
-				<string>79932A0416374B9C009BF83F</string>
-				<string>79932A0616374B9C009BF83F</string>
-				<string>79932A0716374B9C009BF83F</string>
-				<string>79932A0816374B9C009BF83F</string>
-				<string>79932A211637511F009BF83F</string>
-				<string>79F1606516376ACB00AC2AAA</string>
-				<string>79F1606716376B7000AC2AAA</string>
-				<string>79F160721637C4FE00AC2AAA</string>
-				<string>79F160731637C4FE00AC2AAA</string>
-				<string>795451C416424CE300C182FB</string>
-				<string>795451CD1642601600C182FB</string>
-				<string>795451CE1642601600C182FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>790247C916374A3000B912C6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>790247EE16374A3000B912C6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>790247C616374A3000B912C6</string>
-				<string>790247C716374A3000B912C6</string>
-				<string>790247C816374A3000B912C6</string>
-				<string>8CAF366B403A469B8B819420</string>
-				<string>66955FB39A30441898097F47</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Heroku</string>
-			<key>productName</key>
-			<string>Heroku</string>
-			<key>productReference</key>
-			<string>790247CA16374A3000B912C6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>790247CA16374A3000B912C6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Heroku.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>790247CB16374A3000B912C6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>790247CA16374A3000B912C6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247CD16374A3000B912C6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79932A321637590F009BF83F</string>
-				<string>790247CE16374A3000B912C6</string>
-				<string>790247D016374A3000B912C6</string>
-				<string>790247D216374A3000B912C6</string>
-				<string>568B0AF723B34A3297D0DAA8</string>
-				<string>7A82070330104C64A8E9CCD6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247CE16374A3000B912C6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>790247CF16374A3000B912C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>790247CE16374A3000B912C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>790247D016374A3000B912C6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>790247D116374A3000B912C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>790247D016374A3000B912C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>790247D216374A3000B912C6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>790247D316374A3000B912C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>790247D216374A3000B912C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>790247D516374A3000B912C6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>790247D616374A3000B912C6</string>
-				<string>790247D716374A3000B912C6</string>
-				<string>790247DA16374A3000B912C6</string>
-				<string>790247DC16374A3000B912C6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>path</key>
-			<string>Heroku</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247D616374A3000B912C6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Heroku-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247D716374A3000B912C6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>790247D816374A3000B912C6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247D816374A3000B912C6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247D916374A3000B912C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>790247D716374A3000B912C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>790247DA16374A3000B912C6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247DB16374A3000B912C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>790247DA16374A3000B912C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>790247DC16374A3000B912C6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Heroku-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247DD16374A3000B912C6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HRKAppDelegate.h</string>
-			<key>path</key>
-			<string>Heroku/HRKAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247DE16374A3000B912C6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HRKAppDelegate.m</string>
-			<key>path</key>
-			<string>Heroku/HRKAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>790247DF16374A3000B912C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>790247DE16374A3000B912C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>790247EC16374A3000B912C6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>790247ED16374A3000B912C6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.0</string>
-				<key>OTHER_CFLAGS</key>
-				<string>-DNS_BLOCK_ASSERTIONS=1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>790247EE16374A3000B912C6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>790247EF16374A3000B912C6</string>
-				<string>790247F016374A3000B912C6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>790247EF16374A3000B912C6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>10E11CCAC2F94C57A7438F11</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Heroku/Heroku-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Heroku/Heroku-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>790247F016374A3000B912C6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>10E11CCAC2F94C57A7438F11</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Heroku/Heroku-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Heroku/Heroku-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>794590081642E8070095B495</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file</string>
-			<key>path</key>
-			<string>Heroku 1.0a.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7945900A1642E8590095B495</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HRKFormatter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7945900B1642E8590095B495</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HRKFormatter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7945900C1642E8590095B495</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7945900B1642E8590095B495</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7945900D1642EDC30095B495</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Issue.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7945900E1642EDC30095B495</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Issue.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7945900F1642EDC30095B495</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7945900E1642EDC30095B495</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>794590101642EDC30095B495</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Update.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>794590111642EDC30095B495</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Update.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>794590121642EDC30095B495</key>
-		<dict>
-			<key>fileRef</key>
-			<string>794590111642EDC30095B495</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>795451C0164204A700C182FB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HRKTheme.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>795451C1164204A700C182FB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HRKTheme.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>795451C2164204A700C182FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>795451C1164204A700C182FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>795451C316424CE300C182FB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>HRKIssueCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>795451C416424CE300C182FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>795451C316424CE300C182FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>795451C81642558300C182FB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HRKIssueCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>795451C91642558300C182FB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HRKIssueCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>795451CA1642558300C182FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>795451C91642558300C182FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>795451CB1642601600C182FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>back.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>795451CC1642601600C182FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>back@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>795451CD1642601600C182FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>795451CB1642601600C182FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>795451CE1642601600C182FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>795451CC1642601600C182FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>799329F816374B9C009BF83F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79F160701637C4FE00AC2AAA</string>
-				<string>79F160711637C4FE00AC2AAA</string>
-				<string>799329F916374B9C009BF83F</string>
-				<string>799329FA16374B9C009BF83F</string>
-				<string>799329FB16374B9C009BF83F</string>
-				<string>795451CB1642601600C182FB</string>
-				<string>795451CC1642601600C182FB</string>
-				<string>799329FC16374B9C009BF83F</string>
-				<string>799329FE16374B9C009BF83F</string>
-				<string>799329FF16374B9C009BF83F</string>
-				<string>79932A0016374B9C009BF83F</string>
-				<string>79F1606416376ACB00AC2AAA</string>
-				<string>79F1606616376B7000AC2AAA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Images</string>
-			<key>path</key>
-			<string>../Images</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>799329F916374B9C009BF83F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Default-568h@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>799329FA16374B9C009BF83F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Default.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>799329FB16374B9C009BF83F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Default@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>799329FC16374B9C009BF83F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>nav.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>799329FE16374B9C009BF83F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>nav@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>799329FF16374B9C009BF83F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>nav_shadow.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A0016374B9C009BF83F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>nav_shadow@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A0116374B9C009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>799329F916374B9C009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A0216374B9C009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>799329FA16374B9C009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A0316374B9C009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>799329FB16374B9C009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A0416374B9C009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>799329FC16374B9C009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A0616374B9C009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>799329FE16374B9C009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A0716374B9C009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>799329FF16374B9C009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A0816374B9C009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79932A0016374B9C009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A1116374C20009BF83F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79932A1D1637511F009BF83F</string>
-				<string>79932A1E1637511F009BF83F</string>
-				<string>79932A221637572F009BF83F</string>
-				<string>79932A231637572F009BF83F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controllers</string>
-			<key>path</key>
-			<string>Heroku/Code</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A1516374C3E009BF83F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>799329F816374B9C009BF83F</string>
-				<string>79932A1F1637511F009BF83F</string>
-				<string>795451C316424CE300C182FB</string>
-				<string>795451C81642558300C182FB</string>
-				<string>795451C91642558300C182FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>path</key>
-			<string>Heroku/Code</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A1D1637511F009BF83F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HRKStatusViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A1E1637511F009BF83F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HRKStatusViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A1F1637511F009BF83F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>HRKStatusViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A201637511F009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79932A1E1637511F009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A211637511F009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79932A1F1637511F009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A221637572F009BF83F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HRKIssuesViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A231637572F009BF83F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HRKIssuesViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A251637572F009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79932A231637572F009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A27163757F6009BF83F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>795451C0164204A700C182FB</string>
-				<string>795451C1164204A700C182FB</string>
-				<string>7945900A1642E8590095B495</string>
-				<string>7945900B1642E8590095B495</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Heroku/Code</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A2E163758D9009BF83F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79932A3416375ACB009BF83F</string>
-				<string>7945900D1642EDC30095B495</string>
-				<string>7945900E1642EDC30095B495</string>
-				<string>794590101642EDC30095B495</string>
-				<string>794590111642EDC30095B495</string>
-				<string>79932A2F163758F8009BF83F</string>
-				<string>79932A30163758F8009BF83F</string>
-				<string>79932A3716375B21009BF83F</string>
-				<string>79932A3816375B21009BF83F</string>
-				<string>79F1606116375ED400AC2AAA</string>
-				<string>79F1606216375ED400AC2AAA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Models</string>
-			<key>path</key>
-			<string>Heroku/Code</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A2F163758F8009BF83F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HRKDataModel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A30163758F8009BF83F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HRKDataModel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A31163758F8009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79932A30163758F8009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A321637590F009BF83F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreData.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreData.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>79932A331637590F009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79932A321637590F009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A3416375ACB009BF83F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>794590081642E8070095B495</string>
-				<string>79932A3516375ACB009BF83F</string>
-			</array>
-			<key>currentVersion</key>
-			<string>79932A3516375ACB009BF83F</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>Heroku.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>79932A3516375ACB009BF83F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>Heroku.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A3616375ACB009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79932A3416375ACB009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79932A3716375B21009BF83F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HRKIncrementalStore.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A3816375B21009BF83F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HRKIncrementalStore.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79932A3916375B21009BF83F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79932A3816375B21009BF83F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79F1606116375ED400AC2AAA</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>HRKAPIClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79F1606216375ED400AC2AAA</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>HRKAPIClient.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79F1606316375ED500AC2AAA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79F1606216375ED400AC2AAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79F1606416376ACB00AC2AAA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>repeating.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79F1606516376ACB00AC2AAA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79F1606416376ACB00AC2AAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79F1606616376B7000AC2AAA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>repeating@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79F1606716376B7000AC2AAA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79F1606616376B7000AC2AAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79F160701637C4FE00AC2AAA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Icon.png</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>79F160711637C4FE00AC2AAA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Icon@2x.png</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>79F160721637C4FE00AC2AAA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79F160701637C4FE00AC2AAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79F160731637C4FE00AC2AAA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79F160711637C4FE00AC2AAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7A82070330104C64A8E9CCD6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods.a</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>8CAF366B403A469B8B819420</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-		</dict>
-		<key>A87CC05B83054A7C99828F0C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7A82070330104C64A8E9CCD6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict/>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>790247C116374A3000B912C6</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7115CA5EF7A941DF82D9388B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 568B0AF723B34A3297D0DAA8 /* libPods.a */; };
+		790247CF16374A3000B912C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790247CE16374A3000B912C6 /* UIKit.framework */; };
+		790247D116374A3000B912C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790247D016374A3000B912C6 /* Foundation.framework */; };
+		790247D316374A3000B912C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790247D216374A3000B912C6 /* CoreGraphics.framework */; };
+		790247D916374A3000B912C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 790247D716374A3000B912C6 /* InfoPlist.strings */; };
+		790247DB16374A3000B912C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 790247DA16374A3000B912C6 /* main.m */; };
+		790247DF16374A3000B912C6 /* HRKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 790247DE16374A3000B912C6 /* HRKAppDelegate.m */; };
+		7945900C1642E8590095B495 /* HRKFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7945900B1642E8590095B495 /* HRKFormatter.m */; };
+		7945902A1642F9220095B495 /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 794590291642F9220095B495 /* Update.m */; };
+		7945902E1642F9220095B495 /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7945902D1642F9220095B495 /* Issue.m */; };
+		795451C2164204A700C182FB /* HRKTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C1164204A700C182FB /* HRKTheme.m */; };
+		795451C416424CE300C182FB /* HRKIssueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795451C316424CE300C182FB /* HRKIssueCell.xib */; };
+		795451CA1642558300C182FB /* HRKIssueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C91642558300C182FB /* HRKIssueCell.m */; };
+		795451CD1642601600C182FB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CB1642601600C182FB /* back.png */; };
+		795451CE1642601600C182FB /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CC1642601600C182FB /* back@2x.png */; };
+		79932A0116374B9C009BF83F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329F916374B9C009BF83F /* Default-568h@2x.png */; };
+		79932A0216374B9C009BF83F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FA16374B9C009BF83F /* Default.png */; };
+		79932A0316374B9C009BF83F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FB16374B9C009BF83F /* Default@2x.png */; };
+		79932A0416374B9C009BF83F /* nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FC16374B9C009BF83F /* nav.png */; };
+		79932A0616374B9C009BF83F /* nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FE16374B9C009BF83F /* nav@2x.png */; };
+		79932A0716374B9C009BF83F /* nav_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FF16374B9C009BF83F /* nav_shadow.png */; };
+		79932A0816374B9C009BF83F /* nav_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79932A0016374B9C009BF83F /* nav_shadow@2x.png */; };
+		79932A201637511F009BF83F /* HRKStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A1E1637511F009BF83F /* HRKStatusViewController.m */; };
+		79932A211637511F009BF83F /* HRKStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79932A1F1637511F009BF83F /* HRKStatusViewController.xib */; };
+		79932A251637572F009BF83F /* HRKIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A231637572F009BF83F /* HRKIssuesViewController.m */; };
+		79932A31163758F8009BF83F /* HRKDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A30163758F8009BF83F /* HRKDataModel.m */; };
+		79932A331637590F009BF83F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79932A321637590F009BF83F /* CoreData.framework */; };
+		79932A3616375ACB009BF83F /* Heroku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */; };
+		79932A3916375B21009BF83F /* HRKIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A3816375B21009BF83F /* HRKIncrementalStore.m */; };
+		79F1606316375ED500AC2AAA /* HRKAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F1606216375ED400AC2AAA /* HRKAPIClient.m */; };
+		79F1606516376ACB00AC2AAA /* repeating.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F1606416376ACB00AC2AAA /* repeating.png */; };
+		79F1606716376B7000AC2AAA /* repeating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F1606616376B7000AC2AAA /* repeating@2x.png */; };
+		79F160721637C4FE00AC2AAA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F160701637C4FE00AC2AAA /* Icon.png */; };
+		79F160731637C4FE00AC2AAA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F160711637C4FE00AC2AAA /* Icon@2x.png */; };
+		A87CC05B83054A7C99828F0C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A82070330104C64A8E9CCD6 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10E11CCAC2F94C57A7438F11 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		568B0AF723B34A3297D0DAA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		74BD5A3637AF4589B5B466F9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		790247CA16374A3000B912C6 /* Heroku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heroku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		790247CE16374A3000B912C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		790247D016374A3000B912C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		790247D216374A3000B912C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		790247D616374A3000B912C6 /* Heroku-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Heroku-Info.plist"; sourceTree = "<group>"; };
+		790247D816374A3000B912C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		790247DA16374A3000B912C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		790247DC16374A3000B912C6 /* Heroku-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Heroku-Prefix.pch"; sourceTree = "<group>"; };
+		790247DD16374A3000B912C6 /* HRKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HRKAppDelegate.h; path = Heroku/HRKAppDelegate.h; sourceTree = "<group>"; };
+		790247DE16374A3000B912C6 /* HRKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HRKAppDelegate.m; path = Heroku/HRKAppDelegate.m; sourceTree = "<group>"; };
+		794590081642E8070095B495 /* Heroku 1.0a.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Heroku 1.0a.xcdatamodel"; sourceTree = "<group>"; };
+		7945900A1642E8590095B495 /* HRKFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKFormatter.h; sourceTree = "<group>"; };
+		7945900B1642E8590095B495 /* HRKFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKFormatter.m; sourceTree = "<group>"; };
+		794590281642F9220095B495 /* Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update.h; sourceTree = "<group>"; };
+		794590291642F9220095B495 /* Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Update.m; sourceTree = "<group>"; };
+		7945902C1642F9220095B495 /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
+		7945902D1642F9220095B495 /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
+		795451C0164204A700C182FB /* HRKTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKTheme.h; sourceTree = "<group>"; };
+		795451C1164204A700C182FB /* HRKTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKTheme.m; sourceTree = "<group>"; };
+		795451C316424CE300C182FB /* HRKIssueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKIssueCell.xib; sourceTree = "<group>"; };
+		795451C81642558300C182FB /* HRKIssueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssueCell.h; sourceTree = "<group>"; };
+		795451C91642558300C182FB /* HRKIssueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssueCell.m; sourceTree = "<group>"; };
+		795451CB1642601600C182FB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		795451CC1642601600C182FB /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		799329F916374B9C009BF83F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		799329FA16374B9C009BF83F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		799329FB16374B9C009BF83F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		799329FC16374B9C009BF83F /* nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav.png; sourceTree = "<group>"; };
+		799329FE16374B9C009BF83F /* nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav@2x.png"; sourceTree = "<group>"; };
+		799329FF16374B9C009BF83F /* nav_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_shadow.png; sourceTree = "<group>"; };
+		79932A0016374B9C009BF83F /* nav_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_shadow@2x.png"; sourceTree = "<group>"; };
+		79932A1D1637511F009BF83F /* HRKStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKStatusViewController.h; sourceTree = "<group>"; };
+		79932A1E1637511F009BF83F /* HRKStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKStatusViewController.m; sourceTree = "<group>"; };
+		79932A1F1637511F009BF83F /* HRKStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKStatusViewController.xib; sourceTree = "<group>"; };
+		79932A221637572F009BF83F /* HRKIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssuesViewController.h; sourceTree = "<group>"; };
+		79932A231637572F009BF83F /* HRKIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssuesViewController.m; sourceTree = "<group>"; };
+		79932A2F163758F8009BF83F /* HRKDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKDataModel.h; sourceTree = "<group>"; };
+		79932A30163758F8009BF83F /* HRKDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKDataModel.m; sourceTree = "<group>"; };
+		79932A321637590F009BF83F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		79932A3516375ACB009BF83F /* Heroku.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Heroku.xcdatamodel; sourceTree = "<group>"; };
+		79932A3716375B21009BF83F /* HRKIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIncrementalStore.h; sourceTree = "<group>"; };
+		79932A3816375B21009BF83F /* HRKIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIncrementalStore.m; sourceTree = "<group>"; };
+		79F1606116375ED400AC2AAA /* HRKAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKAPIClient.h; sourceTree = "<group>"; };
+		79F1606216375ED400AC2AAA /* HRKAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKAPIClient.m; sourceTree = "<group>"; };
+		79F1606416376ACB00AC2AAA /* repeating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repeating.png; sourceTree = "<group>"; };
+		79F1606616376B7000AC2AAA /* repeating@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "repeating@2x.png"; sourceTree = "<group>"; };
+		79F160701637C4FE00AC2AAA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
+		79F160711637C4FE00AC2AAA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		7A82070330104C64A8E9CCD6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		790247C716374A3000B912C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79932A331637590F009BF83F /* CoreData.framework in Frameworks */,
+				790247CF16374A3000B912C6 /* UIKit.framework in Frameworks */,
+				790247D116374A3000B912C6 /* Foundation.framework in Frameworks */,
+				790247D316374A3000B912C6 /* CoreGraphics.framework in Frameworks */,
+				7115CA5EF7A941DF82D9388B /* libPods.a in Frameworks */,
+				A87CC05B83054A7C99828F0C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		790247BF16374A3000B912C6 = {
+			isa = PBXGroup;
+			children = (
+				790247DD16374A3000B912C6 /* HRKAppDelegate.h */,
+				790247DE16374A3000B912C6 /* HRKAppDelegate.m */,
+				79932A27163757F6009BF83F /* Classes */,
+				79932A1116374C20009BF83F /* Controllers */,
+				79932A2E163758D9009BF83F /* Models */,
+				79932A1516374C3E009BF83F /* Views */,
+				790247D516374A3000B912C6 /* Supporting Files */,
+				790247CD16374A3000B912C6 /* Frameworks */,
+				790247CB16374A3000B912C6 /* Products */,
+				74BD5A3637AF4589B5B466F9 /* Pods.xcconfig */,
+				10E11CCAC2F94C57A7438F11 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		790247CB16374A3000B912C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				790247CA16374A3000B912C6 /* Heroku.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		790247CD16374A3000B912C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79932A321637590F009BF83F /* CoreData.framework */,
+				790247CE16374A3000B912C6 /* UIKit.framework */,
+				790247D016374A3000B912C6 /* Foundation.framework */,
+				790247D216374A3000B912C6 /* CoreGraphics.framework */,
+				568B0AF723B34A3297D0DAA8 /* libPods.a */,
+				7A82070330104C64A8E9CCD6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		790247D516374A3000B912C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				790247D616374A3000B912C6 /* Heroku-Info.plist */,
+				790247D716374A3000B912C6 /* InfoPlist.strings */,
+				790247DA16374A3000B912C6 /* main.m */,
+				790247DC16374A3000B912C6 /* Heroku-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = Heroku;
+			sourceTree = "<group>";
+		};
+		799329F816374B9C009BF83F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				79F160701637C4FE00AC2AAA /* Icon.png */,
+				79F160711637C4FE00AC2AAA /* Icon@2x.png */,
+				799329F916374B9C009BF83F /* Default-568h@2x.png */,
+				799329FA16374B9C009BF83F /* Default.png */,
+				799329FB16374B9C009BF83F /* Default@2x.png */,
+				795451CB1642601600C182FB /* back.png */,
+				795451CC1642601600C182FB /* back@2x.png */,
+				799329FC16374B9C009BF83F /* nav.png */,
+				799329FE16374B9C009BF83F /* nav@2x.png */,
+				799329FF16374B9C009BF83F /* nav_shadow.png */,
+				79932A0016374B9C009BF83F /* nav_shadow@2x.png */,
+				79F1606416376ACB00AC2AAA /* repeating.png */,
+				79F1606616376B7000AC2AAA /* repeating@2x.png */,
+			);
+			name = Images;
+			path = ../Images;
+			sourceTree = "<group>";
+		};
+		79932A1116374C20009BF83F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79932A1D1637511F009BF83F /* HRKStatusViewController.h */,
+				79932A1E1637511F009BF83F /* HRKStatusViewController.m */,
+				79932A221637572F009BF83F /* HRKIssuesViewController.h */,
+				79932A231637572F009BF83F /* HRKIssuesViewController.m */,
+			);
+			name = Controllers;
+			path = Heroku/Code;
+			sourceTree = "<group>";
+		};
+		79932A1516374C3E009BF83F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				799329F816374B9C009BF83F /* Images */,
+				79932A1F1637511F009BF83F /* HRKStatusViewController.xib */,
+				795451C316424CE300C182FB /* HRKIssueCell.xib */,
+				795451C81642558300C182FB /* HRKIssueCell.h */,
+				795451C91642558300C182FB /* HRKIssueCell.m */,
+			);
+			name = Views;
+			path = Heroku/Code;
+			sourceTree = "<group>";
+		};
+		79932A27163757F6009BF83F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				795451C0164204A700C182FB /* HRKTheme.h */,
+				795451C1164204A700C182FB /* HRKTheme.m */,
+				7945900A1642E8590095B495 /* HRKFormatter.h */,
+				7945900B1642E8590095B495 /* HRKFormatter.m */,
+			);
+			name = Classes;
+			path = Heroku/Code;
+			sourceTree = "<group>";
+		};
+		79932A2E163758D9009BF83F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */,
+				7945902C1642F9220095B495 /* Issue.h */,
+				7945902D1642F9220095B495 /* Issue.m */,
+				794590281642F9220095B495 /* Update.h */,
+				794590291642F9220095B495 /* Update.m */,
+				79932A2F163758F8009BF83F /* HRKDataModel.h */,
+				79932A30163758F8009BF83F /* HRKDataModel.m */,
+				79932A3716375B21009BF83F /* HRKIncrementalStore.h */,
+				79932A3816375B21009BF83F /* HRKIncrementalStore.m */,
+				79F1606116375ED400AC2AAA /* HRKAPIClient.h */,
+				79F1606216375ED400AC2AAA /* HRKAPIClient.m */,
+			);
+			name = Models;
+			path = Heroku/Code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		790247C916374A3000B912C6 /* Heroku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790247EE16374A3000B912C6 /* Build configuration list for PBXNativeTarget "Heroku" */;
+			buildPhases = (
+				790247C616374A3000B912C6 /* Sources */,
+				790247C716374A3000B912C6 /* Frameworks */,
+				790247C816374A3000B912C6 /* Resources */,
+				8CAF366B403A469B8B819420 /* Copy Pods Resources */,
+				66955FB39A30441898097F47 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Heroku;
+			productName = Heroku;
+			productReference = 790247CA16374A3000B912C6 /* Heroku.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		790247C116374A3000B912C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HRK;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Zach Williams";
+			};
+			buildConfigurationList = 790247C416374A3000B912C6 /* Build configuration list for PBXProject "Heroku" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 790247BF16374A3000B912C6;
+			productRefGroup = 790247CB16374A3000B912C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				790247C916374A3000B912C6 /* Heroku */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		790247C816374A3000B912C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790247D916374A3000B912C6 /* InfoPlist.strings in Resources */,
+				79932A0116374B9C009BF83F /* Default-568h@2x.png in Resources */,
+				79932A0216374B9C009BF83F /* Default.png in Resources */,
+				79932A0316374B9C009BF83F /* Default@2x.png in Resources */,
+				79932A0416374B9C009BF83F /* nav.png in Resources */,
+				79932A0616374B9C009BF83F /* nav@2x.png in Resources */,
+				79932A0716374B9C009BF83F /* nav_shadow.png in Resources */,
+				79932A0816374B9C009BF83F /* nav_shadow@2x.png in Resources */,
+				79932A211637511F009BF83F /* HRKStatusViewController.xib in Resources */,
+				79F1606516376ACB00AC2AAA /* repeating.png in Resources */,
+				79F1606716376B7000AC2AAA /* repeating@2x.png in Resources */,
+				79F160721637C4FE00AC2AAA /* Icon.png in Resources */,
+				79F160731637C4FE00AC2AAA /* Icon@2x.png in Resources */,
+				795451C416424CE300C182FB /* HRKIssueCell.xib in Resources */,
+				795451CD1642601600C182FB /* back.png in Resources */,
+				795451CE1642601600C182FB /* back@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66955FB39A30441898097F47 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		8CAF366B403A469B8B819420 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		790247C616374A3000B912C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790247DB16374A3000B912C6 /* main.m in Sources */,
+				790247DF16374A3000B912C6 /* HRKAppDelegate.m in Sources */,
+				79932A201637511F009BF83F /* HRKStatusViewController.m in Sources */,
+				79932A251637572F009BF83F /* HRKIssuesViewController.m in Sources */,
+				79932A31163758F8009BF83F /* HRKDataModel.m in Sources */,
+				79932A3616375ACB009BF83F /* Heroku.xcdatamodeld in Sources */,
+				79932A3916375B21009BF83F /* HRKIncrementalStore.m in Sources */,
+				79F1606316375ED500AC2AAA /* HRKAPIClient.m in Sources */,
+				795451C2164204A700C182FB /* HRKTheme.m in Sources */,
+				795451CA1642558300C182FB /* HRKIssueCell.m in Sources */,
+				7945900C1642E8590095B495 /* HRKFormatter.m in Sources */,
+				7945902A1642F9220095B495 /* Update.m in Sources */,
+				7945902E1642F9220095B495 /* Issue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		790247D716374A3000B912C6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				790247D816374A3000B912C6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		790247EC16374A3000B912C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		790247ED16374A3000B912C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		790247EF16374A3000B912C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E11CCAC2F94C57A7438F11 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heroku/Heroku-Prefix.pch";
+				INFOPLIST_FILE = "Heroku/Heroku-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		790247F016374A3000B912C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E11CCAC2F94C57A7438F11 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heroku/Heroku-Prefix.pch";
+				INFOPLIST_FILE = "Heroku/Heroku-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		790247C416374A3000B912C6 /* Build configuration list for PBXProject "Heroku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790247EC16374A3000B912C6 /* Debug */,
+				790247ED16374A3000B912C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790247EE16374A3000B912C6 /* Build configuration list for PBXNativeTarget "Heroku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790247EF16374A3000B912C6 /* Debug */,
+				790247F016374A3000B912C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				794590081642E8070095B495 /* Heroku 1.0a.xcdatamodel */,
+				79932A3516375ACB009BF83F /* Heroku.xcdatamodel */,
+			);
+			currentVersion = 79932A3516375ACB009BF83F /* Heroku.xcdatamodel */;
+			path = Heroku.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 790247C116374A3000B912C6 /* Project object */;
+}
