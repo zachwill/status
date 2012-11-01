@@ -8,6 +8,7 @@
 
 #import "HRKAPIClient.h"
 #import <CoreData/CoreData.h>
+#import "HRKFormatter.h"
 
 static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
 
@@ -56,7 +57,9 @@ static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
                                                                         ofEntity:entity
                                                                     fromResponse:response] mutableCopy];
     if ([entity.name isEqualToString:@"Issue"]) {
-        mutableProperties[@"issue_id"] = representation[@"id"];
+        NSDate *date = [[HRKFormatter sharedFormatter] dateFromString:representation[@"created_at"]];
+        mutableProperties[@"created_at"] = date;
+        mutableProperties[@"issue_id"]   = representation[@"id"];
     }
     return mutableProperties;
 }

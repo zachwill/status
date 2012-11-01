@@ -14,6 +14,7 @@
 		790247D916374A3000B912C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 790247D716374A3000B912C6 /* InfoPlist.strings */; };
 		790247DB16374A3000B912C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 790247DA16374A3000B912C6 /* main.m */; };
 		790247DF16374A3000B912C6 /* HRKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 790247DE16374A3000B912C6 /* HRKAppDelegate.m */; };
+		7945900C1642E8590095B495 /* HRKFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7945900B1642E8590095B495 /* HRKFormatter.m */; };
 		795451C2164204A700C182FB /* HRKTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C1164204A700C182FB /* HRKTheme.m */; };
 		795451C416424CE300C182FB /* HRKIssueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795451C316424CE300C182FB /* HRKIssueCell.xib */; };
 		795451C7164250C500C182FB /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C6164250C500C182FB /* Issue.m */; };
@@ -54,6 +55,9 @@
 		790247DC16374A3000B912C6 /* Heroku-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Heroku-Prefix.pch"; sourceTree = "<group>"; };
 		790247DD16374A3000B912C6 /* HRKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HRKAppDelegate.h; path = Heroku/HRKAppDelegate.h; sourceTree = "<group>"; };
 		790247DE16374A3000B912C6 /* HRKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HRKAppDelegate.m; path = Heroku/HRKAppDelegate.m; sourceTree = "<group>"; };
+		794590081642E8070095B495 /* Heroku 1.0a.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heroku 1.0a.xcdatamodel"; sourceTree = "<group>"; };
+		7945900A1642E8590095B495 /* HRKFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKFormatter.h; sourceTree = "<group>"; };
+		7945900B1642E8590095B495 /* HRKFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKFormatter.m; sourceTree = "<group>"; };
 		795451C0164204A700C182FB /* HRKTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKTheme.h; sourceTree = "<group>"; };
 		795451C1164204A700C182FB /* HRKTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKTheme.m; sourceTree = "<group>"; };
 		795451C316424CE300C182FB /* HRKIssueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKIssueCell.xib; sourceTree = "<group>"; };
@@ -204,6 +208,8 @@
 			children = (
 				795451C0164204A700C182FB /* HRKTheme.h */,
 				795451C1164204A700C182FB /* HRKTheme.m */,
+				7945900A1642E8590095B495 /* HRKFormatter.h */,
+				7945900B1642E8590095B495 /* HRKFormatter.m */,
 			);
 			name = Classes;
 			path = Heroku/Code;
@@ -333,6 +339,7 @@
 				795451C2164204A700C182FB /* HRKTheme.m in Sources */,
 				795451C7164250C500C182FB /* Issue.m in Sources */,
 				795451CA1642558300C182FB /* HRKIssueCell.m in Sources */,
+				7945900C1642E8590095B495 /* HRKFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +457,7 @@
 		79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				794590081642E8070095B495 /* Heroku 1.0a.xcdatamodel */,
 				79932A3516375ACB009BF83F /* Heroku.xcdatamodel */,
 			);
 			currentVersion = 79932A3516375ACB009BF83F /* Heroku.xcdatamodel */;

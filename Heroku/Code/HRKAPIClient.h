@@ -11,5 +11,5 @@
 @interface HRKAPIClient : AFRESTClient <AFIncrementalStoreHTTPClient>
 
 + (HRKAPIClient *)sharedClient;
-    
+
 @end
