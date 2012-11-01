@@ -7,8 +7,8 @@
 //
 
 #import "HRKAppDelegate.h"
-#import "HRKStatusViewController.h"
 #import "HRKIssuesViewController.h"
+#import "AFNetworking.h"
 #import "HRKTheme.h"
 
 @implementation HRKAppDelegate
@@ -16,6 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // AFNetworking activity indicator
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     
     // Root view controller
     HRKIssuesViewController *issuesVC = [[HRKIssuesViewController alloc] init];
