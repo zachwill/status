@@ -11,5 +11,6 @@
 @interface UIColor (Heroku)
 
 + (UIColor *)hrk_backgroundColor;
++ (UIColor *)hrk_repeatingBackground;
 
 @end

@@ -8,6 +8,8 @@
 
 #import "HRKAppDelegate.h"
 #import "HRKStatusViewController.h"
+#import "HRKTableViewController.h"
+#import "HRKTheme.h"
 
 @implementation HRKAppDelegate
 
@@ -16,21 +18,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Root view controller
-    HRKStatusViewController *herokuVC = [[HRKStatusViewController alloc] initWithNibName:@"HRKStatusViewController"
-                                                                                  bundle:nil];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:herokuVC];
+    HRKTableViewController *tableViewController = [[HRKTableViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
     [self.window makeKeyAndVisible];
     
     // UIAppearance styling
-    [self applyStyleSheet];
+    [HRKTheme applyCustomStyleSheet];
     
     return YES;
-}
-
-- (void)applyStyleSheet {
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav"]
-                                       forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setShadowImage:[UIImage imageNamed:@"nav_shadow"]];
 }
 
 @end

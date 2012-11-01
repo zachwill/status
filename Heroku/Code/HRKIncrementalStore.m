@@ -8,6 +8,7 @@
 
 #import "HRKIncrementalStore.h"
 #import "HRKDataModel.h"
+#import "HRKAPIClient.h"
 
 @implementation HRKIncrementalStore
 
@@ -26,8 +27,7 @@
 }
 
 - (id<AFIncrementalStoreHTTPClient>)HTTPClient {
-#warning Missing API client
-    return nil;
+    return [HRKAPIClient sharedClient];
 }
 
 @end

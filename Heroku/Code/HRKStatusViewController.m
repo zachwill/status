@@ -7,7 +7,7 @@
 //
 
 #import "HRKStatusViewController.h"
-#import "UIColor+Heroku.h"
+#import "HRKTheme.h"
 
 @interface HRKStatusViewController ()
 
@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor hrk_backgroundColor];
+    self.view.backgroundColor = [HRKTheme backgroundColor];
 }
 
 @end

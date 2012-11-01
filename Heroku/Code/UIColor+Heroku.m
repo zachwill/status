@@ -15,4 +15,8 @@
     return [UIColor colorWithRed:0.129 green:0.129 blue:0.165 alpha:1.000];
 }
 
++ (UIColor *)hrk_repeatingBackground {
+    return [UIColor colorWithPatternImage:[UIImage imageNamed:@"repeating"]];
+}
+
 @end

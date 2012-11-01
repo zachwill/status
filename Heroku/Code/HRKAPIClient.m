@@ -9,7 +9,7 @@
 #import "HRKAPIClient.h"
 #import <CoreData/CoreData.h>
 
-static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/issues";
+static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
 
 @implementation HRKAPIClient
 
@@ -34,22 +34,16 @@ static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/issu
 
 #pragma mark - AFIncrementalStore
 
-// Return the "objects" array from Tastypie API
 - (id)representationOrArrayOfRepresentationsFromResponseObject:(id)responseObject {
-    responseObject = [super representationOrArrayOfRepresentationsFromResponseObject:responseObject];
-    NSArray *tastyPieObjects = [responseObject objectForKey:@"objects"];
-    if ([responseObject isKindOfClass:[NSDictionary class]] && tastyPieObjects) {
-        return tastyPieObjects;
-    }
-    return responseObject;
+    return [super representationOrArrayOfRepresentationsFromResponseObject:responseObject];
 }
 
 - (NSURLRequest *)requestForFetchRequest:(NSFetchRequest *)fetchRequest
                              withContext:(NSManagedObjectContext *)context
 {
     NSMutableURLRequest *mutableRequest = nil;
-    if ([fetchRequest.entityName isEqualToString:@"Drinkup"]) {
-        mutableRequest = [self requestWithMethod:@"GET" path:@"drinkups" parameters:nil];
+    if ([fetchRequest.entityName isEqualToString:@"Issue"]) {
+        mutableRequest = [self requestWithMethod:@"GET" path:@"issues" parameters:@{@"limit": @30}];
     }
     return mutableRequest;
 }
@@ -61,16 +55,18 @@ static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/issu
     NSMutableDictionary *mutableProperties = [[super attributesForRepresentation:representation
                                                                         ofEntity:entity
                                                                     fromResponse:response] mutableCopy];
+    if ([entity.name isEqualToString:@"Issue"]) {
+        mutableProperties[@"issue_id"] = representation[@"id"];
+    }
     return mutableProperties;
 }
 
-// Needs to be unique
 - (NSString *)resourceIdentifierForRepresentation:(NSDictionary *)representation
                                          ofEntity:(NSEntityDescription *)entity
                                      fromResponse:(NSHTTPURLResponse *)response
 {
-#warning Needs to be unique
-    return nil;
+    // Needs to be unique.
+    return representation[@"href"];
 }
 
 - (BOOL)shouldFetchRemoteAttributeValuesForObjectWithID:(NSManagedObjectID *)objectID

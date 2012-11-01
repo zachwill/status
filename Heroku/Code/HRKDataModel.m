@@ -9,6 +9,7 @@
 #import "HRKDataModel.h"
 #import <CoreData/CoreData.h>
 #import "AFIncrementalStore.h"
+#import "HRKIncrementalStore.h"
 
 @interface HRKDataModel ()
 
@@ -60,8 +61,7 @@
 
 // Overwrite when copy/pasting.
 - (NSString *)persistentStoreType {
-#warning - Incomplete
-    return nil;
+    return [HRKIncrementalStore type];
 }
 
 // NOTE: Should only be set once.
