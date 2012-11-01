@@ -7,8 +7,23 @@
         <attribute name="resolved" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="upcoming" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="updated_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="updates" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Update" inverseName="issue" inverseEntity="Update" syncable="YES"/>
+    </entity>
+    <entity name="Update" representedClassName="Update" syncable="YES">
+        <attribute name="contents" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="incident_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="status_dev" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status_prod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="update_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="update_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updated_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="issue" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Issue" inverseName="updates" inverseEntity="Issue" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Issue" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Issue" positionX="160" positionY="192" width="128" height="165"/>
+        <element name="Update" positionX="160" positionY="192" width="128" height="195"/>
     </elements>
 </model>

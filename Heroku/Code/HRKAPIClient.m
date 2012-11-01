@@ -57,9 +57,17 @@ static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
                                                                         ofEntity:entity
                                                                     fromResponse:response] mutableCopy];
     if ([entity.name isEqualToString:@"Issue"]) {
-        NSDate *date = [[HRKFormatter sharedFormatter] dateFromString:representation[@"created_at"]];
-        mutableProperties[@"created_at"] = date;
         mutableProperties[@"issue_id"]   = representation[@"id"];
+        NSDate *created = [[HRKFormatter sharedFormatter] dateFromString:representation[@"created_at"]];
+        mutableProperties[@"created_at"] = created;
+        NSDate *updated = [[HRKFormatter sharedFormatter] dateFromString:representation[@"updated_at"]];
+        mutableProperties[@"updated_at"] = updated;
+    } else if ([entity.name isEqualToString:@"Update"]) {
+        mutableProperties[@"update_id"]  = representation[@"id"];
+        NSDate *created = [[HRKFormatter sharedFormatter] dateFromString:representation[@"created_at"]];
+        mutableProperties[@"created_at"] = created;
+        NSDate *updated = [[HRKFormatter sharedFormatter] dateFromString:representation[@"updated_at"]];
+        mutableProperties[@"updated_at"] = updated;
     }
     return mutableProperties;
 }
@@ -69,7 +77,10 @@ static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
                                      fromResponse:(NSHTTPURLResponse *)response
 {
     // Needs to be unique.
-    return representation[@"href"];
+    if ([entity.name isEqualToString:@"Issue"]) {
+        return representation[@"href"];
+    }
+    return [representation[@"id"] description];
 }
 
 - (BOOL)shouldFetchRemoteAttributeValuesForObjectWithID:(NSManagedObjectID *)objectID
