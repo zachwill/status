@@ -15,6 +15,11 @@
     return [UIColor colorWithRed:0.129 green:0.129 blue:0.165 alpha:1.000];
 }
 
++ (UIColor *)orangeColor {
+    // #ffa500
+    return [UIColor colorWithRed:1.000 green:0.647 blue:0.000 alpha:1.000];
+}
+
 + (UIColor *)purpleColor {
     // #29254d
     return [UIColor colorWithRed:0.161 green:0.145 blue:0.302 alpha:1.000];

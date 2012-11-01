@@ -11,7 +11,9 @@
 @interface HRKTheme : NSObject
 
 + (void)applyCustomStyleSheet;
+
 + (UIColor *)backgroundColor;
++ (UIColor *)orangeColor;
 + (UIColor *)purpleColor;
 + (UIColor *)textColor;
 
