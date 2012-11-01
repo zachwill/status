@@ -29,7 +29,6 @@
 		79932A0616374B9C009BF83F /* nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FE16374B9C009BF83F /* nav@2x.png */; };
 		79932A0716374B9C009BF83F /* nav_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FF16374B9C009BF83F /* nav_shadow.png */; };
 		79932A0816374B9C009BF83F /* nav_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79932A0016374B9C009BF83F /* nav_shadow@2x.png */; };
-		79932A201637511F009BF83F /* HRKStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A1E1637511F009BF83F /* HRKStatusViewController.m */; };
 		79932A211637511F009BF83F /* HRKStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79932A1F1637511F009BF83F /* HRKStatusViewController.xib */; };
 		79932A251637572F009BF83F /* HRKIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A231637572F009BF83F /* HRKIssuesViewController.m */; };
 		79932A31163758F8009BF83F /* HRKDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A30163758F8009BF83F /* HRKDataModel.m */; };
@@ -82,8 +81,6 @@
 		799329FE16374B9C009BF83F /* nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav@2x.png"; sourceTree = "<group>"; };
 		799329FF16374B9C009BF83F /* nav_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_shadow.png; sourceTree = "<group>"; };
 		79932A0016374B9C009BF83F /* nav_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_shadow@2x.png"; sourceTree = "<group>"; };
-		79932A1D1637511F009BF83F /* HRKStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKStatusViewController.h; sourceTree = "<group>"; };
-		79932A1E1637511F009BF83F /* HRKStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKStatusViewController.m; sourceTree = "<group>"; };
 		79932A1F1637511F009BF83F /* HRKStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKStatusViewController.xib; sourceTree = "<group>"; };
 		79932A221637572F009BF83F /* HRKIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssuesViewController.h; sourceTree = "<group>"; };
 		79932A231637572F009BF83F /* HRKIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssuesViewController.m; sourceTree = "<group>"; };
@@ -198,8 +195,6 @@
 		79932A1116374C20009BF83F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				79932A1D1637511F009BF83F /* HRKStatusViewController.h */,
-				79932A1E1637511F009BF83F /* HRKStatusViewController.m */,
 				79932A221637572F009BF83F /* HRKIssuesViewController.h */,
 				79932A231637572F009BF83F /* HRKIssuesViewController.m */,
 				79C87319164306230091467C /* HRKUpdatesViewController.h */,
@@ -370,7 +365,6 @@
 			files = (
 				790247DB16374A3000B912C6 /* main.m in Sources */,
 				790247DF16374A3000B912C6 /* HRKAppDelegate.m in Sources */,
-				79932A201637511F009BF83F /* HRKStatusViewController.m in Sources */,
 				79932A251637572F009BF83F /* HRKIssuesViewController.m in Sources */,
 				79932A31163758F8009BF83F /* HRKDataModel.m in Sources */,
 				79932A3616375ACB009BF83F /* Heroku.xcdatamodeld in Sources */,

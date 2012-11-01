@@ -7,10 +7,10 @@
 //
 
 #import "HRKAppDelegate.h"
-#import "HRKIssuesViewController.h"
 #import "AFNetworking.h"
 #import "HRKDataModel.h"
 #import "HRKTheme.h"
+#import "HRKIssuesViewController.h"
 
 @implementation HRKAppDelegate
 
