@@ -16,6 +16,8 @@
     self.title.text = issue.title;
     Update *mostRecentUpdate = issue.updates[0];
     self.description.text = mostRecentUpdate.contents;
+    NSDateComponents *duration = issue.duration;
+    self.duration.text = [NSString stringWithFormat:@"%dm", duration.minute];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

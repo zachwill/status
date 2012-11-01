@@ -14,6 +14,7 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *title;
 @property (nonatomic, weak) IBOutlet UILabel *description;
+@property (nonatomic, weak) IBOutlet UILabel *duration;
 @property (nonatomic, strong) Issue *issue;
 
 @end

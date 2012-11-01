@@ -19,6 +19,7 @@
 @dynamic title;
 @dynamic upcoming;
 @dynamic updated_at;
+@dynamic duration;
 @dynamic updates;
 
 @end

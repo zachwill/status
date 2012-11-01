@@ -62,6 +62,12 @@ static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
         mutableProperties[@"created_at"] = created;
         NSDate *updated = [[HRKFormatter sharedFormatter] dateFromString:representation[@"updated_at"]];
         mutableProperties[@"updated_at"] = updated;
+        NSCalendar *calendar = [NSCalendar currentCalendar];
+        NSDateComponents *duration = [calendar components:NSHourCalendarUnit | NSMinuteCalendarUnit
+                                                 fromDate:created
+                                                   toDate:updated
+                                                  options:0];
+        mutableProperties[@"duration"] = duration;
     } else if ([entity.name isEqualToString:@"Update"]) {
         mutableProperties[@"update_id"]  = representation[@"id"];
         NSDate *created = [[HRKFormatter sharedFormatter] dateFromString:representation[@"created_at"]];

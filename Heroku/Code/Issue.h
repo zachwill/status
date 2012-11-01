@@ -20,6 +20,7 @@
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSNumber * upcoming;
 @property (nonatomic, retain) NSDate * updated_at;
+@property (nonatomic, retain) id duration;
 @property (nonatomic, retain) NSOrderedSet *updates;
 @end
 
