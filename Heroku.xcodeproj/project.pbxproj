@@ -36,8 +36,8 @@
 		79C8731B164306230091467C /* HRKUpdatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8731A164306230091467C /* HRKUpdatesViewController.m */; };
 		79C8731E164309C60091467C /* HRKUpdateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C8731D164309C60091467C /* HRKUpdateCell.xib */; };
 		79C8732116430B3C0091467C /* HRKUpdateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8732016430B3C0091467C /* HRKUpdateCell.m */; };
-		79C873241643224B0091467C /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C873231643224B0091467C /* Issue.m */; };
-		79C873271643224B0091467C /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C873261643224B0091467C /* Update.m */; };
+		79C8732A16432B250091467C /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8732916432B250091467C /* Issue.m */; };
+		79C8732D16432B250091467C /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8732C16432B250091467C /* Update.m */; };
 		79F1606316375ED500AC2AAA /* HRKAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F1606216375ED400AC2AAA /* HRKAPIClient.m */; };
 		79F1606516376ACB00AC2AAA /* repeating.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F1606416376ACB00AC2AAA /* repeating.png */; };
 		79F1606716376B7000AC2AAA /* repeating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F1606616376B7000AC2AAA /* repeating@2x.png */; };
@@ -91,10 +91,10 @@
 		79C8731D164309C60091467C /* HRKUpdateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKUpdateCell.xib; sourceTree = "<group>"; };
 		79C8731F16430B3C0091467C /* HRKUpdateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKUpdateCell.h; sourceTree = "<group>"; };
 		79C8732016430B3C0091467C /* HRKUpdateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKUpdateCell.m; sourceTree = "<group>"; };
-		79C873221643224B0091467C /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
-		79C873231643224B0091467C /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
-		79C873251643224B0091467C /* Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update.h; sourceTree = "<group>"; };
-		79C873261643224B0091467C /* Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Update.m; sourceTree = "<group>"; };
+		79C8732816432B250091467C /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
+		79C8732916432B250091467C /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
+		79C8732B16432B250091467C /* Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update.h; sourceTree = "<group>"; };
+		79C8732C16432B250091467C /* Update.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Update.m; sourceTree = "<group>"; };
 		79F1606116375ED400AC2AAA /* HRKAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKAPIClient.h; sourceTree = "<group>"; };
 		79F1606216375ED400AC2AAA /* HRKAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKAPIClient.m; sourceTree = "<group>"; };
 		79F1606416376ACB00AC2AAA /* repeating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repeating.png; sourceTree = "<group>"; };
@@ -236,10 +236,10 @@
 			isa = PBXGroup;
 			children = (
 				79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */,
-				79C873221643224B0091467C /* Issue.h */,
-				79C873231643224B0091467C /* Issue.m */,
-				79C873251643224B0091467C /* Update.h */,
-				79C873261643224B0091467C /* Update.m */,
+				79C8732816432B250091467C /* Issue.h */,
+				79C8732916432B250091467C /* Issue.m */,
+				79C8732B16432B250091467C /* Update.h */,
+				79C8732C16432B250091467C /* Update.m */,
 				79932A2F163758F8009BF83F /* HRKDataModel.h */,
 				79932A30163758F8009BF83F /* HRKDataModel.m */,
 				79932A3716375B21009BF83F /* HRKIncrementalStore.h */,
@@ -375,8 +375,8 @@
 				7945900C1642E8590095B495 /* HRKFormatter.m in Sources */,
 				79C8731B164306230091467C /* HRKUpdatesViewController.m in Sources */,
 				79C8732116430B3C0091467C /* HRKUpdateCell.m in Sources */,
-				79C873241643224B0091467C /* Issue.m in Sources */,
-				79C873271643224B0091467C /* Update.m in Sources */,
+				79C8732A16432B250091467C /* Issue.m in Sources */,
+				79C8732D16432B250091467C /* Update.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

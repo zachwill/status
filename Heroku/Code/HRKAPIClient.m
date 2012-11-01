@@ -44,7 +44,7 @@ static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
 {
     NSMutableURLRequest *mutableRequest = nil;
     if ([fetchRequest.entityName isEqualToString:@"Issue"]) {
-        mutableRequest = [self requestWithMethod:@"GET" path:@"issues" parameters:@{@"limit": @30}];
+        mutableRequest = [self requestWithMethod:@"GET" path:@"issues" parameters:@{@"limit": @20}];
     }
     return mutableRequest;
 }
@@ -63,11 +63,16 @@ static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
         NSDate *updated = [[HRKFormatter sharedFormatter] dateFromString:representation[@"updated_at"]];
         mutableProperties[@"updated_at"] = updated;
         NSCalendar *calendar = [NSCalendar currentCalendar];
-        NSDateComponents *duration = [calendar components:NSHourCalendarUnit | NSMinuteCalendarUnit
+        NSDateComponents *duration = [calendar components:NSHourCalendarUnit|NSMinuteCalendarUnit
                                                  fromDate:created
                                                    toDate:updated
                                                   options:0];
         mutableProperties[@"duration"] = duration;
+        // Used for sections.
+        NSDateComponents *dayComponents = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
+                                            fromDate:created];
+        NSDate *day = [calendar dateFromComponents:dayComponents];
+        mutableProperties[@"day"] = day;
     } else if ([entity.name isEqualToString:@"Update"]) {
         mutableProperties[@"update_id"]  = representation[@"id"];
         NSDate *created = [[HRKFormatter sharedFormatter] dateFromString:representation[@"created_at"]];

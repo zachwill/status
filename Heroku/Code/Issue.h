@@ -21,6 +21,7 @@
 @property (nonatomic, retain) NSNumber * upcoming;
 @property (nonatomic, retain) NSDate * updated_at;
 @property (nonatomic, retain) id duration;
+@property (nonatomic, retain) id day;
 @property (nonatomic, retain) NSOrderedSet *updates;
 @end
 

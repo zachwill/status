@@ -54,11 +54,10 @@ static const CGFloat kCellHeight = 100.0f;
     
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Issue"];
     NSManagedObjectContext *context = [[HRKDataModel sharedModel] mainContext];
-    fetchRequest.fetchBatchSize = 30;
     fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"href" ascending:NO]];
     _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
                                                                     managedObjectContext:context
-                                                                      sectionNameKeyPath:nil
+                                                                      sectionNameKeyPath:@"day"
                                                                                cacheName:@"Issue"];
     _fetchedResultsController.delegate = self;
     return _fetchedResultsController;
@@ -82,6 +81,7 @@ static const CGFloat kCellHeight = 100.0f;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+    NSLog(@"%@ sections", @(self.fetchedResultsController.sections.count));
     return self.fetchedResultsController.sections.count;
 }
 

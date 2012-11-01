@@ -20,6 +20,7 @@
 @dynamic upcoming;
 @dynamic updated_at;
 @dynamic duration;
+@dynamic day;
 @dynamic updates;
 
 @end

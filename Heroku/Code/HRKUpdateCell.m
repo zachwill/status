@@ -13,7 +13,7 @@
 
 - (void)setUpdate:(Update *)update {
     _update = update;
-    self.title.text = _update.title;
+    self.title.text = [update.update_type capitalizedString];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

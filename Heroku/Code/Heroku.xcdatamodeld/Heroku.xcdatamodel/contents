@@ -2,6 +2,7 @@
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Issue" representedClassName="Issue" syncable="YES">
         <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="day" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="duration" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="href" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="issue_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -24,7 +25,7 @@
         <relationship name="issue" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Issue" inverseName="updates" inverseEntity="Issue" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Issue" positionX="160" positionY="192" width="128" height="180"/>
+        <element name="Issue" positionX="160" positionY="192" width="128" height="195"/>
         <element name="Update" positionX="160" positionY="192" width="128" height="195"/>
     </elements>
 </model>
