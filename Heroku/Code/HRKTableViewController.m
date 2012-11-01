@@ -21,6 +21,7 @@
 
 
 static NSString * const kCellIdentifier = @"Issue";
+static const CGFloat kCellHeight = 100.0f;
 
 
 @implementation HRKTableViewController
@@ -101,7 +102,7 @@ static NSString * const kCellIdentifier = @"Issue";
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
+    return kCellHeight;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

@@ -59,7 +59,6 @@
                                                    inDomains:NSUserDomainMask] lastObject];
 }
 
-// Overwrite when copy/pasting.
 - (NSString *)persistentStoreType {
     return [HRKIncrementalStore type];
 }
@@ -77,7 +76,6 @@
 
 #pragma mark - Getters
 
-// Overwrite when copy/pasting.
 - (NSString *)modelName {
     return @"Heroku";
 }
