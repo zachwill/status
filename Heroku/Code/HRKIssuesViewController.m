@@ -12,7 +12,7 @@
 #import "HRKTheme.h"
 #import "Issue.h"
 #import "HRKIssueCell.h"
-#import "HRKStatusViewController.h"
+#import "HRKUpdatesViewController.h"
 
 @interface HRKIssuesViewController () <NSFetchedResultsControllerDelegate>
 
@@ -108,8 +108,9 @@ static const CGFloat kCellHeight = 100.0f;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    HRKStatusViewController *statusViewController = [[HRKStatusViewController alloc] init];
-    [self.navigationController pushViewController:statusViewController animated:YES];
+    Issue *issue = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    HRKUpdatesViewController *updatesViewController = [[HRKUpdatesViewController alloc] initWithIssue:issue];
+    [self.navigationController pushViewController:updatesViewController animated:YES];
 }
 
 @end

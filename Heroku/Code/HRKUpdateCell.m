@@ -1,21 +1,19 @@
 //
-//  HRKIssueCell.m
+//  HRKUpdateCell.m
 //  Heroku
 //
 //  Created by Zach Williams on 11/1/12.
 //  Copyright (c) 2012 Zach Williams. All rights reserved.
 //
 
-#import "HRKIssueCell.h"
-#import "Issue.h"
+#import "HRKUpdateCell.h"
 #import "Update.h"
 
-@implementation HRKIssueCell
+@implementation HRKUpdateCell
 
-- (void)setIssue:(Issue *)issue {
-    self.title.text = issue.title;
-    Update *mostRecentUpdate = issue.updates[0];
-    self.description.text = mostRecentUpdate.contents;
+- (void)setUpdate:(Update *)update {
+    _update = update;
+    self.title.text = _update.title;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

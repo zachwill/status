@@ -9,6 +9,7 @@
 #import "HRKAppDelegate.h"
 #import "HRKIssuesViewController.h"
 #import "AFNetworking.h"
+#import "HRKDataModel.h"
 #import "HRKTheme.h"
 
 @implementation HRKAppDelegate
@@ -19,6 +20,9 @@
     
     // AFNetworking activity indicator
     [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+    
+    // Create NSURL cache
+    [[HRKDataModel sharedModel] createSharedURLCache];
     
     // Root view controller
     HRKIssuesViewController *issuesVC = [[HRKIssuesViewController alloc] init];
