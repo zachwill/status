@@ -23,7 +23,7 @@
 
 
 static NSString * const kCellIdentifier = @"Issue";
-static const CGFloat kCellHeight = 120.0f;
+static const CGFloat kCellHeight = 125.0f;
 
 
 @implementation HRKIssuesViewController

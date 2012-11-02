@@ -17,7 +17,12 @@
     Update *mostRecentUpdate = issue.updates[0];
     self.description.text = mostRecentUpdate.contents;
     NSDateComponents *duration = issue.duration;
-    self.duration.text = [NSString stringWithFormat:@"%dm", duration.minute];
+    if (duration.hour > 0 && duration.hour < 12) {
+        // Seems to be a crazy bug -- hundreds of hours?
+        self.duration.text = [NSString stringWithFormat:@"%dh", duration.hour];
+    } else {
+        self.duration.text = [NSString stringWithFormat:@"%dm", duration.minute];
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
