@@ -23,7 +23,7 @@
 
 
 static NSString * const kCellIdentifier = @"Issue";
-static const CGFloat kCellHeight = 100.0f;
+static const CGFloat kCellHeight = 120.0f;
 
 
 @implementation HRKIssuesViewController
@@ -82,7 +82,6 @@ static const CGFloat kCellHeight = 100.0f;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    NSLog(@"%@ sections", @(self.fetchedResultsController.sections.count));
     return self.fetchedResultsController.sections.count;
 }
 
@@ -123,9 +122,13 @@ static const CGFloat kCellHeight = 100.0f;
     HRKIssueHeaderView *header = (HRKIssueHeaderView *)[[[NSBundle mainBundle] loadNibNamed:@"HRKIssueHeaderView"
                                                                                       owner:self
                                                                                     options:nil] lastObject];
-    header.backgroundColor = [HRKTheme backgroundColor];
+    header.backgroundColor = [UIColor colorWithRed:0.157 green:0.161 blue:0.212 alpha:1.000];
     header.day.text = day;
     return header;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

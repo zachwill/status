@@ -14,6 +14,8 @@
 		790247D916374A3000B912C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 790247D716374A3000B912C6 /* InfoPlist.strings */; };
 		790247DB16374A3000B912C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 790247DA16374A3000B912C6 /* main.m */; };
 		790247DF16374A3000B912C6 /* HRKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 790247DE16374A3000B912C6 /* HRKAppDelegate.m */; };
+		7927A875164381E900A5D10F /* titlebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7927A873164381E900A5D10F /* titlebar.png */; };
+		7927A876164381E900A5D10F /* titlebar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7927A874164381E900A5D10F /* titlebar@2x.png */; };
 		7945900C1642E8590095B495 /* HRKFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7945900B1642E8590095B495 /* HRKFormatter.m */; };
 		795451C2164204A700C182FB /* HRKTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C1164204A700C182FB /* HRKTheme.m */; };
 		795451C416424CE300C182FB /* HRKIssueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795451C316424CE300C182FB /* HRKIssueCell.xib */; };
@@ -61,6 +63,8 @@
 		790247DC16374A3000B912C6 /* Heroku-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Heroku-Prefix.pch"; sourceTree = "<group>"; };
 		790247DD16374A3000B912C6 /* HRKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HRKAppDelegate.h; path = Heroku/HRKAppDelegate.h; sourceTree = "<group>"; };
 		790247DE16374A3000B912C6 /* HRKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HRKAppDelegate.m; path = Heroku/HRKAppDelegate.m; sourceTree = "<group>"; };
+		7927A873164381E900A5D10F /* titlebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlebar.png; sourceTree = "<group>"; };
+		7927A874164381E900A5D10F /* titlebar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titlebar@2x.png"; sourceTree = "<group>"; };
 		794590081642E8070095B495 /* Heroku 1.0a.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Heroku 1.0a.xcdatamodel"; sourceTree = "<group>"; };
 		7945900A1642E8590095B495 /* HRKFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKFormatter.h; sourceTree = "<group>"; };
 		7945900B1642E8590095B495 /* HRKFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKFormatter.m; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				79932A0016374B9C009BF83F /* nav_shadow@2x.png */,
 				79F1606416376ACB00AC2AAA /* repeating.png */,
 				79F1606616376B7000AC2AAA /* repeating@2x.png */,
+				7927A873164381E900A5D10F /* titlebar.png */,
+				7927A874164381E900A5D10F /* titlebar@2x.png */,
 			);
 			name = Images;
 			path = ../Images;
@@ -327,6 +333,8 @@
 				795451CE1642601600C182FB /* back@2x.png in Resources */,
 				79C8731E164309C60091467C /* HRKUpdateCell.xib in Resources */,
 				79C8732F164338FD0091467C /* HRKIssueHeaderView.xib in Resources */,
+				7927A875164381E900A5D10F /* titlebar.png in Resources */,
+				7927A876164381E900A5D10F /* titlebar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
