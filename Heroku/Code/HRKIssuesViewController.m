@@ -106,31 +106,6 @@ static const CGFloat kCellHeight = 125.0f;
     return kCellHeight;
 }
 
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    NSString *sectionName = [[self.fetchedResultsController.sections objectAtIndex:section] name];
-    static NSDateFormatter *rawDateFormatter = nil;
-    static NSDateFormatter *dateStringFormatter = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        rawDateFormatter = [[NSDateFormatter alloc] init];
-        rawDateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss ZZ";
-        dateStringFormatter = [[NSDateFormatter alloc] init];
-        dateStringFormatter.dateFormat = @"E MMM d";
-    });
-    NSDate *date  = [rawDateFormatter dateFromString:sectionName];
-    NSString *day = [dateStringFormatter stringFromDate:date];
-    HRKIssueHeaderView *header = (HRKIssueHeaderView *)[[[NSBundle mainBundle] loadNibNamed:@"HRKIssueHeaderView"
-                                                                                      owner:self
-                                                                                    options:nil] lastObject];
-    header.backgroundColor = [UIColor colorWithRed:0.157 green:0.161 blue:0.212 alpha:1.000];
-    header.day.text = day;
-    return header;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Issue *issue = [self.fetchedResultsController objectAtIndexPath:indexPath];
