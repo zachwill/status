@@ -11,6 +11,7 @@
 #import "HRKDataModel.h"
 #import "HRKTheme.h"
 #import "HRKIssuesViewController.h"
+#import "Reachability.h"
 
 @implementation HRKAppDelegate
 
@@ -32,7 +33,24 @@
     // UIAppearance styling
     [HRKTheme applyCustomStyleSheet];
     
+    // Check network reachability
+    [self checkNetworkReachability];
+    
     return YES;
+}
+
+- (void)checkNetworkReachability {
+    Reachability *heroku = [Reachability reachabilityWithHostname:@"http://status.heroku.com"];
+    heroku.unreachableBlock = ^(Reachability *reach){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[[UIAlertView alloc] initWithTitle:@"Internet Connection Failed"
+                                        message:@"Sorry, looks like the connection failed."
+                                       delegate:self
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil] show];
+        });
+    };
+    [heroku startNotifier];
 }
 
 @end
