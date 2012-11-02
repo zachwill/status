@@ -14,6 +14,7 @@
 - (void)setUpdate:(Update *)update {
     _update = update;
     self.title.text = [update.update_type capitalizedString];
+    self.contents.text = update.contents;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

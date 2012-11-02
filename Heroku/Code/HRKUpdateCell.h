@@ -13,6 +13,7 @@
 @interface HRKUpdateCell : UITableViewCell
 
 @property (nonatomic, weak) IBOutlet UILabel *title;
+@property (nonatomic, weak) IBOutlet UILabel *contents;
 @property (nonatomic, strong) Update *update;
 
 @end
