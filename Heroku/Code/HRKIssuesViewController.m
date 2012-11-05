@@ -86,6 +86,7 @@ static NSString * const kReuseIdentifier = @"Issue";
                                                                     managedObjectContext:context
                                                                       sectionNameKeyPath:nil
                                                                                cacheName:@"Issue"];
+    _fetchedResultsController.delegate = self;
     return _fetchedResultsController;
 }
 
