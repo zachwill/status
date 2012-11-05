@@ -22,6 +22,9 @@
 		795451CA1642558300C182FB /* HRKIssueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C91642558300C182FB /* HRKIssueCell.m */; };
 		795451CD1642601600C182FB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CB1642601600C182FB /* back.png */; };
 		795451CE1642601600C182FB /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CC1642601600C182FB /* back@2x.png */; };
+		795AE658164847A5004EE01C /* HRKIssuesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE657164847A5004EE01C /* HRKIssuesCollectionViewController.m */; };
+		795AE65C1648504B004EE01C /* HRKIssueLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE65B1648504B004EE01C /* HRKIssueLayout.m */; };
+		795AE65F16485150004EE01C /* HRKIssueCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE65E16485150004EE01C /* HRKIssueCollectionViewCell.m */; };
 		79932A0116374B9C009BF83F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329F916374B9C009BF83F /* Default-568h@2x.png */; };
 		79932A0216374B9C009BF83F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FA16374B9C009BF83F /* Default.png */; };
 		79932A0316374B9C009BF83F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FB16374B9C009BF83F /* Default@2x.png */; };
@@ -41,6 +44,8 @@
 		79C8732D16432B250091467C /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8732C16432B250091467C /* Update.m */; };
 		79C8732F164338FD0091467C /* HRKIssueHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C8732E164338FD0091467C /* HRKIssueHeaderView.xib */; };
 		79C87332164339CE0091467C /* HRKIssueHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C87331164339CE0091467C /* HRKIssueHeaderView.m */; };
+		79DF16B116485E100073B7A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DF16B016485E100073B7A5 /* QuartzCore.framework */; };
+		79DF16B4164860ED0073B7A5 /* HRKIssueCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79DF16B3164860ED0073B7A5 /* HRKIssueCollectionViewCell.xib */; };
 		79F1606316375ED500AC2AAA /* HRKAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F1606216375ED400AC2AAA /* HRKAPIClient.m */; };
 		79F1606516376ACB00AC2AAA /* repeating.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F1606416376ACB00AC2AAA /* repeating.png */; };
 		79F1606716376B7000AC2AAA /* repeating@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79F1606616376B7000AC2AAA /* repeating@2x.png */; };
@@ -75,6 +80,12 @@
 		795451C91642558300C182FB /* HRKIssueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssueCell.m; sourceTree = "<group>"; };
 		795451CB1642601600C182FB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		795451CC1642601600C182FB /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		795AE656164847A5004EE01C /* HRKIssuesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssuesCollectionViewController.h; sourceTree = "<group>"; };
+		795AE657164847A5004EE01C /* HRKIssuesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssuesCollectionViewController.m; sourceTree = "<group>"; };
+		795AE65A1648504B004EE01C /* HRKIssueLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssueLayout.h; sourceTree = "<group>"; };
+		795AE65B1648504B004EE01C /* HRKIssueLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssueLayout.m; sourceTree = "<group>"; };
+		795AE65D16485150004EE01C /* HRKIssueCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssueCollectionViewCell.h; sourceTree = "<group>"; };
+		795AE65E16485150004EE01C /* HRKIssueCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssueCollectionViewCell.m; sourceTree = "<group>"; };
 		799329F916374B9C009BF83F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		799329FA16374B9C009BF83F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		799329FB16374B9C009BF83F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -102,6 +113,8 @@
 		79C8732E164338FD0091467C /* HRKIssueHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKIssueHeaderView.xib; sourceTree = "<group>"; };
 		79C87330164339CE0091467C /* HRKIssueHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssueHeaderView.h; sourceTree = "<group>"; };
 		79C87331164339CE0091467C /* HRKIssueHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssueHeaderView.m; sourceTree = "<group>"; };
+		79DF16B016485E100073B7A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		79DF16B3164860ED0073B7A5 /* HRKIssueCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKIssueCollectionViewCell.xib; sourceTree = "<group>"; };
 		79F1606116375ED400AC2AAA /* HRKAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKAPIClient.h; sourceTree = "<group>"; };
 		79F1606216375ED400AC2AAA /* HRKAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKAPIClient.m; sourceTree = "<group>"; };
 		79F1606416376ACB00AC2AAA /* repeating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repeating.png; sourceTree = "<group>"; };
@@ -116,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79DF16B116485E100073B7A5 /* QuartzCore.framework in Frameworks */,
 				79932A331637590F009BF83F /* CoreData.framework in Frameworks */,
 				790247CF16374A3000B912C6 /* UIKit.framework in Frameworks */,
 				790247D116374A3000B912C6 /* Foundation.framework in Frameworks */,
@@ -156,6 +170,7 @@
 		790247CD16374A3000B912C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79DF16B016485E100073B7A5 /* QuartzCore.framework */,
 				79932A321637590F009BF83F /* CoreData.framework */,
 				790247CE16374A3000B912C6 /* UIKit.framework */,
 				790247D016374A3000B912C6 /* Foundation.framework */,
@@ -206,6 +221,8 @@
 			children = (
 				79932A221637572F009BF83F /* HRKIssuesViewController.h */,
 				79932A231637572F009BF83F /* HRKIssuesViewController.m */,
+				795AE656164847A5004EE01C /* HRKIssuesCollectionViewController.h */,
+				795AE657164847A5004EE01C /* HRKIssuesCollectionViewController.m */,
 				79C87319164306230091467C /* HRKUpdatesViewController.h */,
 				79C8731A164306230091467C /* HRKUpdatesViewController.m */,
 			);
@@ -217,6 +234,11 @@
 			isa = PBXGroup;
 			children = (
 				799329F816374B9C009BF83F /* Images */,
+				795AE65A1648504B004EE01C /* HRKIssueLayout.h */,
+				795AE65B1648504B004EE01C /* HRKIssueLayout.m */,
+				79DF16B3164860ED0073B7A5 /* HRKIssueCollectionViewCell.xib */,
+				795AE65D16485150004EE01C /* HRKIssueCollectionViewCell.h */,
+				795AE65E16485150004EE01C /* HRKIssueCollectionViewCell.m */,
 				79C8732E164338FD0091467C /* HRKIssueHeaderView.xib */,
 				79C87330164339CE0091467C /* HRKIssueHeaderView.h */,
 				79C87331164339CE0091467C /* HRKIssueHeaderView.m */,
@@ -335,6 +357,7 @@
 				79C8732F164338FD0091467C /* HRKIssueHeaderView.xib in Resources */,
 				7927A875164381E900A5D10F /* titlebar.png in Resources */,
 				7927A876164381E900A5D10F /* titlebar@2x.png in Resources */,
+				79DF16B4164860ED0073B7A5 /* HRKIssueCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +414,9 @@
 				79C8732A16432B250091467C /* Issue.m in Sources */,
 				79C8732D16432B250091467C /* Update.m in Sources */,
 				79C87332164339CE0091467C /* HRKIssueHeaderView.m in Sources */,
+				795AE658164847A5004EE01C /* HRKIssuesCollectionViewController.m in Sources */,
+				795AE65C1648504B004EE01C /* HRKIssueLayout.m in Sources */,
+				795AE65F16485150004EE01C /* HRKIssueCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
