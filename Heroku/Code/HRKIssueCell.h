@@ -18,4 +18,6 @@
 @property (nonatomic, weak) IBOutlet UILabel *duration;
 @property (nonatomic, weak) IBOutlet UIImageView *titleBar;
 
+- (void)applyStyles;
+
 @end

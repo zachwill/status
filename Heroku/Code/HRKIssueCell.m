@@ -21,9 +21,7 @@
         return nil;
     }
 
-    self.backgroundColor  = [HRKTheme purpleColor];
     self.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-    self.contentView.layer.cornerRadius = 14;
     return self;
 }
 
@@ -42,6 +40,11 @@
     } else {
         self.duration.text = [NSString stringWithFormat:@"%dm", duration.minute];
     }
+}
+
+- (void)applyStyles {
+    self.layer.cornerRadius = 3;
+    self.backgroundColor = [HRKTheme purpleColor];
 }
 
 - (void)setSelected:(BOOL)selected {
