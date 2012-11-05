@@ -10,7 +10,7 @@
 
 @class Issue;
 
-@interface HRKIssueCollectionViewCell : UICollectionViewCell
+@interface HRKIssueCell : UICollectionViewCell
 
 @property (nonatomic, strong) Issue *issue;
 @property (nonatomic, weak) IBOutlet UILabel *title;

@@ -11,7 +11,7 @@
 #import "HRKDataModel.h"
 #import "Issue.h"
 #import "HRKTheme.h"
-#import "HRKIssueCollectionViewCell.h"
+#import "HRKIssueCell.h"
 #import "HRKUpdatesViewController.h"
 
 // ***************************************************************************
@@ -43,7 +43,7 @@ static NSString * const kReuseIdentifier = @"Issue";
 {
     [super viewDidLoad];
     self.collectionView.backgroundColor = [HRKTheme backgroundColor];
-    UINib *collectionViewCell = [UINib nibWithNibName:@"HRKIssueCollectionViewCell" bundle:nil];
+    UINib *collectionViewCell = [UINib nibWithNibName:@"HRKIssueCell" bundle:nil];
     [self.collectionView registerNib:collectionViewCell forCellWithReuseIdentifier:kReuseIdentifier];
     [self.collectionView addSubview:self.refreshControl];
     [self refetchData];
@@ -105,7 +105,7 @@ static NSString * const kReuseIdentifier = @"Issue";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    HRKIssueCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kReuseIdentifier forIndexPath:indexPath];
+    HRKIssueCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kReuseIdentifier forIndexPath:indexPath];
     Issue *issue = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.backgroundColor = [HRKTheme purpleColor];
     cell.issue = issue;

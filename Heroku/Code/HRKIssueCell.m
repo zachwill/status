@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 Zach Williams. All rights reserved.
 //
 
-#import "HRKIssueCollectionViewCell.h"
+#import "HRKIssueCell.h"
 #import <QuartzCore/QuartzCore.h>
 #import "HRKTheme.h"
 #import "Issue.h"
 #import "Update.h"
 
-@implementation HRKIssueCollectionViewCell
+@implementation HRKIssueCell
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -42,6 +42,13 @@
     } else {
         self.duration.text = [NSString stringWithFormat:@"%dm", duration.minute];
     }
+}
+
+- (void)setSelected:(BOOL)selected {
+    if (!self.titleBar.highlighted) {
+        self.titleBar.highlighted = NO;
+    }
+    [super setSelected:selected];
 }
 
 @end
