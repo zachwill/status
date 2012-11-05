@@ -105,7 +105,9 @@ static NSString * const kReuseIdentifier = @"Issue";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     HRKIssueCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kReuseIdentifier forIndexPath:indexPath];
+    Issue *issue = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.backgroundColor = [HRKTheme purpleColor];
+    cell.issue = issue;
     return cell;
 }
 

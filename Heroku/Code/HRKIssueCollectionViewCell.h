@@ -13,5 +13,8 @@
 @interface HRKIssueCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) Issue *issue;
+@property (nonatomic, weak) IBOutlet UILabel *title;
+@property (nonatomic, weak) IBOutlet UILabel *description;
+@property (nonatomic, weak) IBOutlet UILabel *duration;
 
 @end

@@ -9,6 +9,8 @@
 #import "HRKIssueCollectionViewCell.h"
 #import <QuartzCore/QuartzCore.h>
 #import "HRKTheme.h"
+#import "Issue.h"
+#import "Update.h"
 
 @implementation HRKIssueCollectionViewCell
 
@@ -18,7 +20,7 @@
     if (!self) {
         return nil;
     }
-    
+
     self.backgroundColor  = [HRKTheme purpleColor];
     self.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     self.contentView.layer.cornerRadius = 14;
@@ -26,7 +28,20 @@
 }
 
 - (void)setIssue:(Issue *)issue {
-    // Apply the right labels.
+    _issue = issue;
+    self.title.text = _issue.title;
+
+    Update *mostRecentUpdate = _issue.updates[0];
+    self.description.text = mostRecentUpdate.contents;
+
+    static NSDateComponents *duration = nil;
+    duration = _issue.duration;
+    if (duration.hour > 0 && duration.hour < 12) {
+        // Seems to be a crazy bug -- hundreds of hours?
+        self.duration.text = [NSString stringWithFormat:@"%dh", duration.hour];
+    } else {
+        self.duration.text = [NSString stringWithFormat:@"%dm", duration.minute];
+    }
 }
 
 @end

@@ -16,8 +16,8 @@
         return nil;
     }
     
-    self.itemSize = CGSizeMake(300, 200);
-    self.sectionInset = UIEdgeInsetsMake(10, 5, 10, 5);
+    self.itemSize = CGSizeMake(300, 140);
+    self.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     self.minimumLineSpacing = 14;
     return self;
 }
