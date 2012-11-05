@@ -10,7 +10,6 @@
 #import "AFNetworking.h"
 #import "HRKDataModel.h"
 #import "HRKTheme.h"
-#import "HRKIssuesViewController.h"
 #import "HRKIssuesCollectionViewController.h"
 #import "HRKIssueLayout.h"
 #import "Reachability.h"

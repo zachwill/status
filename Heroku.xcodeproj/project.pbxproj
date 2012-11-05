@@ -18,8 +18,6 @@
 		7927A876164381E900A5D10F /* titlebar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7927A874164381E900A5D10F /* titlebar@2x.png */; };
 		7945900C1642E8590095B495 /* HRKFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7945900B1642E8590095B495 /* HRKFormatter.m */; };
 		795451C2164204A700C182FB /* HRKTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C1164204A700C182FB /* HRKTheme.m */; };
-		795451C416424CE300C182FB /* HRKIssueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795451C316424CE300C182FB /* HRKIssueCell.xib */; };
-		795451CA1642558300C182FB /* HRKIssueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C91642558300C182FB /* HRKIssueCell.m */; };
 		795451CD1642601600C182FB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CB1642601600C182FB /* back.png */; };
 		795451CE1642601600C182FB /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CC1642601600C182FB /* back@2x.png */; };
 		795AE658164847A5004EE01C /* HRKIssuesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE657164847A5004EE01C /* HRKIssuesCollectionViewController.m */; };
@@ -32,7 +30,6 @@
 		79932A0616374B9C009BF83F /* nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FE16374B9C009BF83F /* nav@2x.png */; };
 		79932A0716374B9C009BF83F /* nav_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329FF16374B9C009BF83F /* nav_shadow.png */; };
 		79932A0816374B9C009BF83F /* nav_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79932A0016374B9C009BF83F /* nav_shadow@2x.png */; };
-		79932A251637572F009BF83F /* HRKIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A231637572F009BF83F /* HRKIssuesViewController.m */; };
 		79932A31163758F8009BF83F /* HRKDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A30163758F8009BF83F /* HRKDataModel.m */; };
 		79932A331637590F009BF83F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79932A321637590F009BF83F /* CoreData.framework */; };
 		79932A3616375ACB009BF83F /* Heroku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */; };
@@ -75,9 +72,6 @@
 		7945900B1642E8590095B495 /* HRKFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKFormatter.m; sourceTree = "<group>"; };
 		795451C0164204A700C182FB /* HRKTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKTheme.h; sourceTree = "<group>"; };
 		795451C1164204A700C182FB /* HRKTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKTheme.m; sourceTree = "<group>"; };
-		795451C316424CE300C182FB /* HRKIssueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKIssueCell.xib; sourceTree = "<group>"; };
-		795451C81642558300C182FB /* HRKIssueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssueCell.h; sourceTree = "<group>"; };
-		795451C91642558300C182FB /* HRKIssueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssueCell.m; sourceTree = "<group>"; };
 		795451CB1642601600C182FB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		795451CC1642601600C182FB /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		795AE656164847A5004EE01C /* HRKIssuesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssuesCollectionViewController.h; sourceTree = "<group>"; };
@@ -93,8 +87,6 @@
 		799329FE16374B9C009BF83F /* nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav@2x.png"; sourceTree = "<group>"; };
 		799329FF16374B9C009BF83F /* nav_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_shadow.png; sourceTree = "<group>"; };
 		79932A0016374B9C009BF83F /* nav_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_shadow@2x.png"; sourceTree = "<group>"; };
-		79932A221637572F009BF83F /* HRKIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssuesViewController.h; sourceTree = "<group>"; };
-		79932A231637572F009BF83F /* HRKIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssuesViewController.m; sourceTree = "<group>"; };
 		79932A2F163758F8009BF83F /* HRKDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKDataModel.h; sourceTree = "<group>"; };
 		79932A30163758F8009BF83F /* HRKDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKDataModel.m; sourceTree = "<group>"; };
 		79932A321637590F009BF83F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -219,8 +211,6 @@
 		79932A1116374C20009BF83F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				79932A221637572F009BF83F /* HRKIssuesViewController.h */,
-				79932A231637572F009BF83F /* HRKIssuesViewController.m */,
 				795AE656164847A5004EE01C /* HRKIssuesCollectionViewController.h */,
 				795AE657164847A5004EE01C /* HRKIssuesCollectionViewController.m */,
 				79C87319164306230091467C /* HRKUpdatesViewController.h */,
@@ -242,9 +232,6 @@
 				79C8732E164338FD0091467C /* HRKIssueHeaderView.xib */,
 				79C87330164339CE0091467C /* HRKIssueHeaderView.h */,
 				79C87331164339CE0091467C /* HRKIssueHeaderView.m */,
-				795451C316424CE300C182FB /* HRKIssueCell.xib */,
-				795451C81642558300C182FB /* HRKIssueCell.h */,
-				795451C91642558300C182FB /* HRKIssueCell.m */,
 				79C8731D164309C60091467C /* HRKUpdateCell.xib */,
 				79C8731F16430B3C0091467C /* HRKUpdateCell.h */,
 				79C8732016430B3C0091467C /* HRKUpdateCell.m */,
@@ -350,7 +337,6 @@
 				79F1606716376B7000AC2AAA /* repeating@2x.png in Resources */,
 				79F160721637C4FE00AC2AAA /* Icon.png in Resources */,
 				79F160731637C4FE00AC2AAA /* Icon@2x.png in Resources */,
-				795451C416424CE300C182FB /* HRKIssueCell.xib in Resources */,
 				795451CD1642601600C182FB /* back.png in Resources */,
 				795451CE1642601600C182FB /* back@2x.png in Resources */,
 				79C8731E164309C60091467C /* HRKUpdateCell.xib in Resources */,
@@ -401,13 +387,11 @@
 			files = (
 				790247DB16374A3000B912C6 /* main.m in Sources */,
 				790247DF16374A3000B912C6 /* HRKAppDelegate.m in Sources */,
-				79932A251637572F009BF83F /* HRKIssuesViewController.m in Sources */,
 				79932A31163758F8009BF83F /* HRKDataModel.m in Sources */,
 				79932A3616375ACB009BF83F /* Heroku.xcdatamodeld in Sources */,
 				79932A3916375B21009BF83F /* HRKIncrementalStore.m in Sources */,
 				79F1606316375ED500AC2AAA /* HRKAPIClient.m in Sources */,
 				795451C2164204A700C182FB /* HRKTheme.m in Sources */,
-				795451CA1642558300C182FB /* HRKIssueCell.m in Sources */,
 				7945900C1642E8590095B495 /* HRKFormatter.m in Sources */,
 				79C8731B164306230091467C /* HRKUpdatesViewController.m in Sources */,
 				79C8732116430B3C0091467C /* HRKUpdateCell.m in Sources */,
