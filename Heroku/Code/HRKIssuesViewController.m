@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Zach Williams. All rights reserved.
 //
 
-#import "HRKIssuesCollectionViewController.h"
+#import "HRKIssuesViewController.h"
 #import <CoreData/CoreData.h>
 #import "HRKDataModel.h"
 #import "Issue.h"
@@ -16,7 +16,7 @@
 
 // ***************************************************************************
 
-@interface HRKIssuesCollectionViewController () <NSFetchedResultsControllerDelegate>
+@interface HRKIssuesViewController () <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
@@ -28,7 +28,7 @@ static NSString * const kReuseIdentifier = @"Issue";
 
 // ***************************************************************************
 
-@implementation HRKIssuesCollectionViewController
+@implementation HRKIssuesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

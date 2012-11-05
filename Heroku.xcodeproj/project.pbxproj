@@ -20,7 +20,7 @@
 		795451C2164204A700C182FB /* HRKTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C1164204A700C182FB /* HRKTheme.m */; };
 		795451CD1642601600C182FB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CB1642601600C182FB /* back.png */; };
 		795451CE1642601600C182FB /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CC1642601600C182FB /* back@2x.png */; };
-		795AE658164847A5004EE01C /* HRKIssuesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE657164847A5004EE01C /* HRKIssuesCollectionViewController.m */; };
+		795AE658164847A5004EE01C /* HRKIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE657164847A5004EE01C /* HRKIssuesViewController.m */; };
 		795AE65C1648504B004EE01C /* HRKIssueLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE65B1648504B004EE01C /* HRKIssueLayout.m */; };
 		795AE65F16485150004EE01C /* HRKIssueCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE65E16485150004EE01C /* HRKIssueCollectionViewCell.m */; };
 		79932A0116374B9C009BF83F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 799329F916374B9C009BF83F /* Default-568h@2x.png */; };
@@ -74,8 +74,8 @@
 		795451C1164204A700C182FB /* HRKTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKTheme.m; sourceTree = "<group>"; };
 		795451CB1642601600C182FB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		795451CC1642601600C182FB /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
-		795AE656164847A5004EE01C /* HRKIssuesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssuesCollectionViewController.h; sourceTree = "<group>"; };
-		795AE657164847A5004EE01C /* HRKIssuesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssuesCollectionViewController.m; sourceTree = "<group>"; };
+		795AE656164847A5004EE01C /* HRKIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssuesViewController.h; sourceTree = "<group>"; };
+		795AE657164847A5004EE01C /* HRKIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssuesViewController.m; sourceTree = "<group>"; };
 		795AE65A1648504B004EE01C /* HRKIssueLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssueLayout.h; sourceTree = "<group>"; };
 		795AE65B1648504B004EE01C /* HRKIssueLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssueLayout.m; sourceTree = "<group>"; };
 		795AE65D16485150004EE01C /* HRKIssueCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssueCollectionViewCell.h; sourceTree = "<group>"; };
@@ -211,8 +211,8 @@
 		79932A1116374C20009BF83F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				795AE656164847A5004EE01C /* HRKIssuesCollectionViewController.h */,
-				795AE657164847A5004EE01C /* HRKIssuesCollectionViewController.m */,
+				795AE656164847A5004EE01C /* HRKIssuesViewController.h */,
+				795AE657164847A5004EE01C /* HRKIssuesViewController.m */,
 				79C87319164306230091467C /* HRKUpdatesViewController.h */,
 				79C8731A164306230091467C /* HRKUpdatesViewController.m */,
 			);
@@ -398,7 +398,7 @@
 				79C8732A16432B250091467C /* Issue.m in Sources */,
 				79C8732D16432B250091467C /* Update.m in Sources */,
 				79C87332164339CE0091467C /* HRKIssueHeaderView.m in Sources */,
-				795AE658164847A5004EE01C /* HRKIssuesCollectionViewController.m in Sources */,
+				795AE658164847A5004EE01C /* HRKIssuesViewController.m in Sources */,
 				795AE65C1648504B004EE01C /* HRKIssueLayout.m in Sources */,
 				795AE65F16485150004EE01C /* HRKIssueCollectionViewCell.m in Sources */,
 			);

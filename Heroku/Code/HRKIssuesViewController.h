@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HRKIssuesCollectionViewController : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface HRKIssuesViewController : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, weak) UIRefreshControl *refreshControl;
 

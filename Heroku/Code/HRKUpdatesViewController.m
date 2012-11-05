@@ -13,11 +13,11 @@
 #import "HRKUpdateCell.h"
 #import "HRKTheme.h"
 
-@interface HRKUpdatesViewController ()
-
-@end
+// ***************************************************************************
 
 static NSString * const kUpdateCellIdentifier = @"Update";
+
+// ***************************************************************************
 
 @implementation HRKUpdatesViewController
 
@@ -64,11 +64,6 @@ static NSString * const kUpdateCellIdentifier = @"Update";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 140.0f;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Should there be any interaction?
 }
 
 @end

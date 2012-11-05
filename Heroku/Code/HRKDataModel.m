@@ -11,6 +11,8 @@
 #import "AFIncrementalStore.h"
 #import "HRKIncrementalStore.h"
 
+// ***************************************************************************
+
 @interface HRKDataModel ()
 
 @property (nonatomic, strong) NSManagedObjectModel *managedObjectModel;
@@ -22,6 +24,7 @@
 
 @end
 
+// ***************************************************************************
 
 @implementation HRKDataModel
 

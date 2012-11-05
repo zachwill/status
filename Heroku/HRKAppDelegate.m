@@ -10,7 +10,7 @@
 #import "AFNetworking.h"
 #import "HRKDataModel.h"
 #import "HRKTheme.h"
-#import "HRKIssuesCollectionViewController.h"
+#import "HRKIssuesViewController.h"
 #import "HRKIssueLayout.h"
 #import "Reachability.h"
 
@@ -28,7 +28,7 @@
     
     // Root view controller
     HRKIssueLayout *layout = [[HRKIssueLayout alloc] init];
-    HRKIssuesCollectionViewController *issuesVC = [[HRKIssuesCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    HRKIssuesViewController *issuesVC = [[HRKIssuesViewController alloc] initWithCollectionViewLayout:layout];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:issuesVC];
     [self.window makeKeyAndVisible];
     

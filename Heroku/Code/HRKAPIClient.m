@@ -10,7 +10,11 @@
 #import <CoreData/CoreData.h>
 #import "HRKFormatter.h"
 
+// ***************************************************************************
+
 static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
+
+// ***************************************************************************
 
 @implementation HRKAPIClient
 
