@@ -1,8 +1,8 @@
 //
-//  HRKUpdatesViewController.m
+//  HRKUpdatesCollectionViewController.m
 //  Heroku
 //
-//  Created by Zach Williams on 11/1/12.
+//  Created by Zach Williams on 11/6/12.
 //  Copyright (c) 2012 Zach Williams. All rights reserved.
 //
 
@@ -10,19 +10,31 @@
 #import <CoreData/CoreData.h>
 #import "Issue.h"
 #import "Update.h"
-#import "HRKUpdateCell.h"
+#import "HRKUpdatesLayout.h"
+#import "HRKUpdateCollectionCell.h"
 #import "HRKTheme.h"
 
 // ***************************************************************************
 
+@interface HRKUpdatesViewController () <UIAlertViewDelegate>
+
+@end
+
+// ***************************************************************************
+
+enum UIAlertViewButton {
+    UIAlertViewOkButton = 1
+};
+
 static NSString * const kUpdateCellIdentifier = @"Update";
+static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents/";
 
 // ***************************************************************************
 
 @implementation HRKUpdatesViewController
 
 - (id)initWithIssue:(Issue *)issue {
-    self = [super init];
+    self = [super initWithCollectionViewLayout:[[HRKUpdatesLayout alloc] init]];
     if (!self) {
         return nil;
     }
@@ -32,36 +44,61 @@ static NSString * const kUpdateCellIdentifier = @"Update";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.tableView registerNib:[UINib nibWithNibName:@"HRKUpdateCell" bundle:nil] forCellReuseIdentifier:kUpdateCellIdentifier];
-    self.tableView.backgroundColor = [HRKTheme backgroundColor];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    UINib *nib = [UINib nibWithNibName:@"HRKUpdateCollectionCell" bundle:nil];
+    [self.collectionView registerNib:nib forCellWithReuseIdentifier:kUpdateCellIdentifier];
+    self.collectionView.backgroundColor = [HRKTheme darkBackgroundColor];
+    
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swiped:)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.collectionView addGestureRecognizer:swipe];
 }
 
-#pragma mark - UITableViewDataSource
+#pragma mark - UICollectionViewDataSource
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.updates.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    HRKUpdateCell *cell = [tableView dequeueReusableCellWithIdentifier:kUpdateCellIdentifier forIndexPath:indexPath];
-    
-    Update *update = [self.updates objectAtIndex:indexPath.item];
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    HRKUpdateCollectionCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kUpdateCellIdentifier forIndexPath:indexPath];
+    Update *update = self.updates[indexPath.item];
+    cell.backgroundColor = [HRKTheme grayColor];
     cell.update = update;
-    
     return cell;
 }
 
-#pragma mark - UITableViewDelegate
+#pragma mark - UICollectionViewDelegate
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 140.0f;
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [[[UIAlertView alloc] initWithTitle:@"Open in Safari"
+                                message:@"Open Heroku Status in Safari?"
+                               delegate:self
+                      cancelButtonTitle:@"Cancel"
+                      otherButtonTitles:@"OK", nil] show];
+}
+
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    static Update *update = nil;
+    update = self.updates[0];
+    NSURL *heroku  = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", kHerokuStatusURL, update.incident_id]];
+    
+    switch (buttonIndex) {
+        case UIAlertViewOkButton:
+            [[UIApplication sharedApplication] openURL:heroku];
+            break;
+    }
+}
+
+#pragma mark - UIGestureRecognizer
+
+- (void)swiped:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

@@ -29,7 +29,7 @@
 		795AE658164847A5004EE01C /* HRKIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE657164847A5004EE01C /* HRKIssuesViewController.m */; };
 		795AE65C1648504B004EE01C /* HRKIssuesLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE65B1648504B004EE01C /* HRKIssuesLayout.m */; };
 		795AE65F16485150004EE01C /* HRKIssueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE65E16485150004EE01C /* HRKIssueCell.m */; };
-		796BB5A71649A78E00474042 /* HRKUpdatesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796BB5A61649A78E00474042 /* HRKUpdatesCollectionViewController.m */; };
+		796BB5A71649A78E00474042 /* HRKUpdatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796BB5A61649A78E00474042 /* HRKUpdatesViewController.m */; };
 		796BB5AB1649A96500474042 /* HRKUpdateCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 796BB5AA1649A96500474042 /* HRKUpdateCollectionCell.m */; };
 		796BB5AD1649A97B00474042 /* HRKUpdateCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 796BB5AC1649A97B00474042 /* HRKUpdateCollectionCell.xib */; };
 		796BB5B01649AA4500474042 /* HRKUpdatesLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 796BB5AF1649AA4500474042 /* HRKUpdatesLayout.m */; };
@@ -44,9 +44,6 @@
 		79932A331637590F009BF83F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79932A321637590F009BF83F /* CoreData.framework */; };
 		79932A3616375ACB009BF83F /* Heroku.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79932A3416375ACB009BF83F /* Heroku.xcdatamodeld */; };
 		79932A3916375B21009BF83F /* HRKIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 79932A3816375B21009BF83F /* HRKIncrementalStore.m */; };
-		79C8731B164306230091467C /* HRKUpdatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8731A164306230091467C /* HRKUpdatesViewController.m */; };
-		79C8731E164309C60091467C /* HRKUpdateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79C8731D164309C60091467C /* HRKUpdateCell.xib */; };
-		79C8732116430B3C0091467C /* HRKUpdateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8732016430B3C0091467C /* HRKUpdateCell.m */; };
 		79C8732A16432B250091467C /* Issue.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8732916432B250091467C /* Issue.m */; };
 		79C8732D16432B250091467C /* Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8732C16432B250091467C /* Update.m */; };
 		79DF16B116485E100073B7A5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79DF16B016485E100073B7A5 /* QuartzCore.framework */; };
@@ -99,8 +96,8 @@
 		795AE65B1648504B004EE01C /* HRKIssuesLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssuesLayout.m; sourceTree = "<group>"; };
 		795AE65D16485150004EE01C /* HRKIssueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssueCell.h; sourceTree = "<group>"; };
 		795AE65E16485150004EE01C /* HRKIssueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssueCell.m; sourceTree = "<group>"; };
-		796BB5A51649A78E00474042 /* HRKUpdatesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKUpdatesCollectionViewController.h; sourceTree = "<group>"; };
-		796BB5A61649A78E00474042 /* HRKUpdatesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKUpdatesCollectionViewController.m; sourceTree = "<group>"; };
+		796BB5A51649A78E00474042 /* HRKUpdatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKUpdatesViewController.h; sourceTree = "<group>"; };
+		796BB5A61649A78E00474042 /* HRKUpdatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKUpdatesViewController.m; sourceTree = "<group>"; };
 		796BB5A91649A96500474042 /* HRKUpdateCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKUpdateCollectionCell.h; sourceTree = "<group>"; };
 		796BB5AA1649A96500474042 /* HRKUpdateCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKUpdateCollectionCell.m; sourceTree = "<group>"; };
 		796BB5AC1649A97B00474042 /* HRKUpdateCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKUpdateCollectionCell.xib; sourceTree = "<group>"; };
@@ -119,11 +116,6 @@
 		79932A3516375ACB009BF83F /* Heroku.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Heroku.xcdatamodel; sourceTree = "<group>"; };
 		79932A3716375B21009BF83F /* HRKIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIncrementalStore.h; sourceTree = "<group>"; };
 		79932A3816375B21009BF83F /* HRKIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIncrementalStore.m; sourceTree = "<group>"; };
-		79C87319164306230091467C /* HRKUpdatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKUpdatesViewController.h; sourceTree = "<group>"; };
-		79C8731A164306230091467C /* HRKUpdatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKUpdatesViewController.m; sourceTree = "<group>"; };
-		79C8731D164309C60091467C /* HRKUpdateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKUpdateCell.xib; sourceTree = "<group>"; };
-		79C8731F16430B3C0091467C /* HRKUpdateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKUpdateCell.h; sourceTree = "<group>"; };
-		79C8732016430B3C0091467C /* HRKUpdateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKUpdateCell.m; sourceTree = "<group>"; };
 		79C8732816432B250091467C /* Issue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Issue.h; sourceTree = "<group>"; };
 		79C8732916432B250091467C /* Issue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Issue.m; sourceTree = "<group>"; };
 		79C8732B16432B250091467C /* Update.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Update.h; sourceTree = "<group>"; };
@@ -248,10 +240,8 @@
 			children = (
 				795AE656164847A5004EE01C /* HRKIssuesViewController.h */,
 				795AE657164847A5004EE01C /* HRKIssuesViewController.m */,
-				79C87319164306230091467C /* HRKUpdatesViewController.h */,
-				79C8731A164306230091467C /* HRKUpdatesViewController.m */,
-				796BB5A51649A78E00474042 /* HRKUpdatesCollectionViewController.h */,
-				796BB5A61649A78E00474042 /* HRKUpdatesCollectionViewController.m */,
+				796BB5A51649A78E00474042 /* HRKUpdatesViewController.h */,
+				796BB5A61649A78E00474042 /* HRKUpdatesViewController.m */,
 			);
 			name = Controllers;
 			path = Heroku/Code;
@@ -271,9 +261,6 @@
 				792F4D2F1648A311003A3D09 /* HRKCurrentStatus.xib */,
 				792F4D311648A5E0003A3D09 /* HRKCurrentStatus.h */,
 				792F4D321648A5E0003A3D09 /* HRKCurrentStatus.m */,
-				79C8731D164309C60091467C /* HRKUpdateCell.xib */,
-				79C8731F16430B3C0091467C /* HRKUpdateCell.h */,
-				79C8732016430B3C0091467C /* HRKUpdateCell.m */,
 				796BB5AC1649A97B00474042 /* HRKUpdateCollectionCell.xib */,
 				796BB5A91649A96500474042 /* HRKUpdateCollectionCell.h */,
 				796BB5AA1649A96500474042 /* HRKUpdateCollectionCell.m */,
@@ -382,7 +369,6 @@
 				79F160731637C4FE00AC2AAA /* Icon@2x.png in Resources */,
 				795451CD1642601600C182FB /* back.png in Resources */,
 				795451CE1642601600C182FB /* back@2x.png in Resources */,
-				79C8731E164309C60091467C /* HRKUpdateCell.xib in Resources */,
 				7927A875164381E900A5D10F /* titlebar.png in Resources */,
 				7927A876164381E900A5D10F /* titlebar@2x.png in Resources */,
 				79DF16B4164860ED0073B7A5 /* HRKIssueCell.xib in Resources */,
@@ -457,15 +443,13 @@
 				79F1606316375ED500AC2AAA /* HRKAPIClient.m in Sources */,
 				795451C2164204A700C182FB /* HRKTheme.m in Sources */,
 				7945900C1642E8590095B495 /* HRKFormatter.m in Sources */,
-				79C8731B164306230091467C /* HRKUpdatesViewController.m in Sources */,
-				79C8732116430B3C0091467C /* HRKUpdateCell.m in Sources */,
 				79C8732A16432B250091467C /* Issue.m in Sources */,
 				79C8732D16432B250091467C /* Update.m in Sources */,
 				795AE658164847A5004EE01C /* HRKIssuesViewController.m in Sources */,
 				795AE65C1648504B004EE01C /* HRKIssuesLayout.m in Sources */,
 				795AE65F16485150004EE01C /* HRKIssueCell.m in Sources */,
 				792F4D331648A5E0003A3D09 /* HRKCurrentStatus.m in Sources */,
-				796BB5A71649A78E00474042 /* HRKUpdatesCollectionViewController.m in Sources */,
+				796BB5A71649A78E00474042 /* HRKUpdatesViewController.m in Sources */,
 				796BB5AB1649A96500474042 /* HRKUpdateCollectionCell.m in Sources */,
 				796BB5B01649AA4500474042 /* HRKUpdatesLayout.m in Sources */,
 			);

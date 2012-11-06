@@ -1,8 +1,8 @@
 //
-//  HRKUpdatesViewController.h
+//  HRKUpdatesCollectionViewController.h
 //  Heroku
 //
-//  Created by Zach Williams on 11/1/12.
+//  Created by Zach Williams on 11/6/12.
 //  Copyright (c) 2012 Zach Williams. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 @class Issue;
 
-@interface HRKUpdatesViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface HRKUpdatesViewController : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) NSOrderedSet *updates;
 
