@@ -1,27 +1,43 @@
 
 PODS:
-- AFIncrementalStore (0.2.0):
+- AFIncrementalStore (0.3.0):
   - AFNetworking (>= 0.9.0)
 - AFNetworking (1.0.1)
-- ISO8601DateFormatter (0.6)
+- FormatterKit (1.0.1):
+  - FormatterKit/ArrayFormatter (= 1.0.1)
+  - FormatterKit/LocationFormatter (= 1.0.1)
+  - FormatterKit/OrdinalNumberFormatter (= 1.0.1)
+  - FormatterKit/TimeIntervalFormatter (= 1.0.1)
+  - FormatterKit/URLRequestFormatter (= 1.0.1)
+  - FormatterKit/UnitOfInformationFormatter (= 1.0.1)
+- FormatterKit/ArrayFormatter (1.0.1)
+- FormatterKit/LocationFormatter (1.0.1)
+- FormatterKit/OrdinalNumberFormatter (1.0.1)
+- FormatterKit/TimeIntervalFormatter (1.0.1)
+- FormatterKit/URLRequestFormatter (1.0.1)
+- FormatterKit/UnitOfInformationFormatter (1.0.1)
 - Reachability (3.0.0)
 
 DEPENDENCIES:
-- AFIncrementalStore (from `https://github.com/AFNetworking/AFIncrementalStore.git')
+- AFIncrementalStore (>= 0.3)
 - AFNetworking (= 1.0.1)
-- ISO8601DateFormatter
+- FormatterKit
 - Reachability (from `https://github.com/tonymillion/Reachability.git')
 
 EXTERNAL SOURCES:
-  AFIncrementalStore:
-    :git: https://github.com/AFNetworking/AFIncrementalStore.git
   Reachability:
     :git: https://github.com/tonymillion/Reachability.git
 
 SPEC CHECKSUMS:
-  AFIncrementalStore: 7d7d3071ab9251550860b317ca6561d2a486d531
+  AFIncrementalStore: 9b83c47c04418fe40a42b77be1d9446cc60681a4
   AFNetworking: 4c11f857c9a18d65f4257c90a1e74ac49f0ac422
-  ISO8601DateFormatter: dc05a2481edf49668d85d3ff8c466c32eb544780
+  FormatterKit: 3592a4f49496927ab88318c9bbe84f1088518b7b
+  FormatterKit/ArrayFormatter: 3592a4f49496927ab88318c9bbe84f1088518b7b
+  FormatterKit/LocationFormatter: 3592a4f49496927ab88318c9bbe84f1088518b7b
+  FormatterKit/OrdinalNumberFormatter: 3592a4f49496927ab88318c9bbe84f1088518b7b
+  FormatterKit/TimeIntervalFormatter: 3592a4f49496927ab88318c9bbe84f1088518b7b
+  FormatterKit/URLRequestFormatter: 3592a4f49496927ab88318c9bbe84f1088518b7b
+  FormatterKit/UnitOfInformationFormatter: 3592a4f49496927ab88318c9bbe84f1088518b7b
   Reachability: f5ae7c17d68794bb44a72f6f895264df2e6eca34
 
 COCOAPODS: 0.16.0.rc2
