@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HRKIssueLayout : UICollectionViewFlowLayout
+@interface HRKIssuesLayout : UICollectionViewFlowLayout
 
 @end

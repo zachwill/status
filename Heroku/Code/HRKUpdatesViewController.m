@@ -30,8 +30,7 @@ static NSString * const kUpdateCellIdentifier = @"Update";
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerNib:[UINib nibWithNibName:@"HRKUpdateCell" bundle:nil] forCellReuseIdentifier:kUpdateCellIdentifier];
     self.tableView.backgroundColor = [HRKTheme backgroundColor];
@@ -40,8 +39,7 @@ static NSString * const kUpdateCellIdentifier = @"Update";
 
 #pragma mark - UITableViewDataSource
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 

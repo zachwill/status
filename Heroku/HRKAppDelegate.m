@@ -11,7 +11,7 @@
 #import "HRKDataModel.h"
 #import "HRKTheme.h"
 #import "HRKIssuesViewController.h"
-#import "HRKIssueLayout.h"
+#import "HRKIssuesLayout.h"
 #import "Reachability.h"
 
 @implementation HRKAppDelegate
@@ -27,7 +27,7 @@
     [[HRKDataModel sharedModel] createSharedURLCache];
     
     // Root view controller
-    HRKIssueLayout *layout = [[HRKIssueLayout alloc] init];
+    HRKIssuesLayout *layout = [[HRKIssuesLayout alloc] init];
     HRKIssuesViewController *issuesVC = [[HRKIssuesViewController alloc] initWithCollectionViewLayout:layout];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:issuesVC];
     [self.window makeKeyAndVisible];

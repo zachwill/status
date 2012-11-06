@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Zach Williams. All rights reserved.
 //
 
-#import "HRKIssueLayout.h"
+#import "HRKIssuesLayout.h"
 
-@implementation HRKIssueLayout
+@implementation HRKIssuesLayout
 
 - (id)init {
     self = [super init];

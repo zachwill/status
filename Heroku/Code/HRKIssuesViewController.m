@@ -14,6 +14,7 @@
 #import "HRKIssueCell.h"
 #import "HRKCurrentStatus.h"
 #import "HRKUpdatesViewController.h"
+#import "HRKUpdatesCollectionViewController.h"
 
 // ***************************************************************************
 
@@ -130,8 +131,8 @@ static NSString * const kHeaderIdentifier = @"Header";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     Issue *issue = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    HRKUpdatesViewController *updatesViewController = [[HRKUpdatesViewController alloc] initWithIssue:issue];
-    [self.navigationController pushViewController:updatesViewController animated:YES];
+    HRKUpdatesCollectionViewController *updatesVC = [[HRKUpdatesCollectionViewController alloc] initWithIssue:issue];
+    [self.navigationController pushViewController:updatesVC animated:YES];
 }
 
 @end
