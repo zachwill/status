@@ -11,6 +11,7 @@
 #import "HRKTheme.h"
 #import "Issue.h"
 #import "Update.h"
+#import "TTTTimeIntervalFormatter.h"
 
 @implementation HRKIssueCell
 
@@ -40,6 +41,11 @@
     } else {
         self.duration.text = [NSString stringWithFormat:@"%dm", duration.minute];
     }
+    
+    static TTTTimeIntervalFormatter *timeFormatter = nil;
+    timeFormatter = [[TTTTimeIntervalFormatter alloc] init];
+    NSString *timeStamp = [timeFormatter stringForTimeInterval:[_issue.updated_at timeIntervalSinceDate:[NSDate date]]];
+    self.timeStamp.text = timeStamp;
 }
 
 - (void)applyStyles {
