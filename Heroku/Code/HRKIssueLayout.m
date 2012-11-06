@@ -17,8 +17,9 @@
     }
     
     self.itemSize = CGSizeMake(300, 130);
-    self.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    self.sectionInset = UIEdgeInsetsMake(16, 10, 10, 10);
     self.minimumLineSpacing = 16;
+    self.headerReferenceSize = CGSizeMake(300, 110);
     return self;
 }
 

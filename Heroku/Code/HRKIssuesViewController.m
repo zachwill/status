@@ -12,6 +12,7 @@
 #import "Issue.h"
 #import "HRKTheme.h"
 #import "HRKIssueCell.h"
+#import "HRKCurrentStatus.h"
 #import "HRKUpdatesViewController.h"
 
 // ***************************************************************************
@@ -24,20 +25,12 @@
 
 // ***************************************************************************
 
-static NSString * const kReuseIdentifier = @"Issue";
+static NSString * const kReuseIdentifier  = @"Issue";
+static NSString * const kHeaderIdentifier = @"Header";
 
 // ***************************************************************************
 
 @implementation HRKIssuesViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (!self) {
-        return nil;
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -45,8 +38,19 @@ static NSString * const kReuseIdentifier = @"Issue";
     self.collectionView.backgroundColor = [HRKTheme backgroundColor];
     UINib *collectionViewCell = [UINib nibWithNibName:@"HRKIssueCell" bundle:nil];
     [self.collectionView registerNib:collectionViewCell forCellWithReuseIdentifier:kReuseIdentifier];
+    
+    UINib *header = [UINib nibWithNibName:@"HRKCurrentStatus" bundle:nil];
+    [self.collectionView registerNib:header forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kHeaderIdentifier];
+    
     [self.collectionView addSubview:self.refreshControl];
     [self refetchData];
+    [self customBackButton];
+}
+
+- (void)customBackButton {
+    UIImage *arrow = [UIImage imageNamed:@"arrow.png"];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:arrow style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.backBarButtonItem = backButton;
 }
 
 #pragma mark - UIRefreshControl
@@ -110,6 +114,17 @@ static NSString * const kReuseIdentifier = @"Issue";
     cell.issue = issue;
     [cell applyStyles];
     return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
+           viewForSupplementaryElementOfKind:(NSString *)kind
+                                 atIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *identifier = nil;
+    if (kind == UICollectionElementKindSectionHeader) {
+        identifier = kHeaderIdentifier;
+    }
+    return [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:identifier forIndexPath:indexPath];
 }
 
 #pragma mark - UICollectionViewDelegate

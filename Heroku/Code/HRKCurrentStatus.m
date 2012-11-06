@@ -1,19 +1,20 @@
 //
-//  HRKIssueHeaderView.m
+//  HRKCurrentStatus.m
 //  Heroku
 //
-//  Created by Zach Williams on 11/1/12.
+//  Created by Zach Williams on 11/5/12.
 //  Copyright (c) 2012 Zach Williams. All rights reserved.
 //
 
-#import "HRKIssueHeaderView.h"
+#import "HRKCurrentStatus.h"
 
-@implementation HRKIssueHeaderView
+@implementation HRKCurrentStatus
 
-- (id)init {
-    self = [super init];
-    if (!self) {
-        return nil;
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
     }
     return self;
 }
