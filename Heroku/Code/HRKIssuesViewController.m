@@ -35,7 +35,7 @@ static NSString * const kHeaderIdentifier = @"Header";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.collectionView.backgroundColor = [HRKTheme backgroundColor];
+    self.collectionView.backgroundColor = [HRKTheme darkBackgroundColor];
     UINib *collectionViewCell = [UINib nibWithNibName:@"HRKIssueCell" bundle:nil];
     [self.collectionView registerNib:collectionViewCell forCellWithReuseIdentifier:kReuseIdentifier];
     

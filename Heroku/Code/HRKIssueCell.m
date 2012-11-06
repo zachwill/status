@@ -26,6 +26,11 @@
     return self;
 }
 
+- (void)applyStyles {
+    self.layer.cornerRadius = 3;
+    self.backgroundColor = [HRKTheme grayColor];
+}
+
 - (void)setIssue:(Issue *)issue {
     _issue = issue;
     self.title.text = _issue.title;
@@ -46,11 +51,6 @@
     timeFormatter = [[TTTTimeIntervalFormatter alloc] init];
     NSString *timeStamp = [timeFormatter stringForTimeInterval:[_issue.updated_at timeIntervalSinceDate:[NSDate date]]];
     self.timeStamp.text = timeStamp;
-}
-
-- (void)applyStyles {
-    self.layer.cornerRadius = 3;
-    self.backgroundColor = [HRKTheme purpleColor];
 }
 
 - (void)setSelected:(BOOL)selected {

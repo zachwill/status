@@ -13,8 +13,10 @@
 + (void)applyCustomStyleSheet;
 
 + (UIColor *)backgroundColor;
++ (UIColor *)darkBackgroundColor;
 + (UIColor *)orangeColor;
 + (UIColor *)purpleColor;
++ (UIColor *)grayColor;
 + (UIColor *)textColor;
 
 @end
