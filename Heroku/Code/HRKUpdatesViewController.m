@@ -48,9 +48,14 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:kUpdateCellIdentifier];
     self.collectionView.backgroundColor = [HRKTheme darkBackgroundColor];
     
+    // Gesture Recognizer
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swiped:)];
     swipe.direction = UISwipeGestureRecognizerDirectionRight;
     [self.collectionView addGestureRecognizer:swipe];
+}
+
+- (void)layoutSubviews {
+   NSLog(@"%@", @(self.collectionView.contentSize.height));
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -72,6 +77,16 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
 }
 
 #pragma mark - UICollectionViewDelegate
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout*)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    Update *update = self.updates[indexPath.item];
+    CGSize constraint = CGSizeMake(280, MAXFLOAT);
+    CGSize text = [update.contents sizeWithFont:[UIFont systemFontOfSize:12.0f] constrainedToSize:constraint];
+    return CGSizeMake(300, 80 + text.height);
+}
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [[[UIAlertView alloc] initWithTitle:@"Open in Safari"
