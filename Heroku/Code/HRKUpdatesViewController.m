@@ -49,6 +49,7 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
     UINib *nib = [UINib nibWithNibName:@"HRKUpdateCollectionCell" bundle:nil];
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:kUpdateCellIdentifier];
     self.collectionView.backgroundColor = [HRKTheme darkBackgroundColor];
+    self.collectionView.alwaysBounceVertical = YES;
     
     // Issue header
     UINib *header = [UINib nibWithNibName:@"HRKUpdateHeaderView" bundle:nil];
