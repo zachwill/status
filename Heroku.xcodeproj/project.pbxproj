@@ -29,6 +29,8 @@
 		795AE658164847A5004EE01C /* HRKIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE657164847A5004EE01C /* HRKIssuesViewController.m */; };
 		795AE65C1648504B004EE01C /* HRKIssuesLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE65B1648504B004EE01C /* HRKIssuesLayout.m */; };
 		795AE65F16485150004EE01C /* HRKIssueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 795AE65E16485150004EE01C /* HRKIssueCell.m */; };
+		7960F071164A4C5300AD51E0 /* HRKUpdateHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7960F070164A4C5300AD51E0 /* HRKUpdateHeaderView.m */; };
+		7960F075164A4CB800AD51E0 /* HRKUpdateHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7960F074164A4CB800AD51E0 /* HRKUpdateHeaderView.xib */; };
 		796BB5A71649A78E00474042 /* HRKUpdatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796BB5A61649A78E00474042 /* HRKUpdatesViewController.m */; };
 		796BB5AB1649A96500474042 /* HRKUpdateCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 796BB5AA1649A96500474042 /* HRKUpdateCollectionCell.m */; };
 		796BB5AD1649A97B00474042 /* HRKUpdateCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 796BB5AC1649A97B00474042 /* HRKUpdateCollectionCell.xib */; };
@@ -60,7 +62,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10E11CCAC2F94C57A7438F11 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		5671C40DF10944099D466EA6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		568B0AF723B34A3297D0DAA8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BD5A3637AF4589B5B466F9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -96,6 +97,9 @@
 		795AE65B1648504B004EE01C /* HRKIssuesLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssuesLayout.m; sourceTree = "<group>"; };
 		795AE65D16485150004EE01C /* HRKIssueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKIssueCell.h; sourceTree = "<group>"; };
 		795AE65E16485150004EE01C /* HRKIssueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKIssueCell.m; sourceTree = "<group>"; };
+		7960F06F164A4C5300AD51E0 /* HRKUpdateHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKUpdateHeaderView.h; sourceTree = "<group>"; };
+		7960F070164A4C5300AD51E0 /* HRKUpdateHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKUpdateHeaderView.m; sourceTree = "<group>"; };
+		7960F074164A4CB800AD51E0 /* HRKUpdateHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRKUpdateHeaderView.xib; sourceTree = "<group>"; };
 		796BB5A51649A78E00474042 /* HRKUpdatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKUpdatesViewController.h; sourceTree = "<group>"; };
 		796BB5A61649A78E00474042 /* HRKUpdatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKUpdatesViewController.m; sourceTree = "<group>"; };
 		796BB5A91649A96500474042 /* HRKUpdateCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKUpdateCollectionCell.h; sourceTree = "<group>"; };
@@ -131,7 +135,6 @@
 		79F160701637C4FE00AC2AAA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
 		79F160711637C4FE00AC2AAA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		7A82070330104C64A8E9CCD6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F674ECC1765044AA85FA0265 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +169,6 @@
 				790247CD16374A3000B912C6 /* Frameworks */,
 				790247CB16374A3000B912C6 /* Products */,
 				74BD5A3637AF4589B5B466F9 /* Pods.xcconfig */,
-				10E11CCAC2F94C57A7438F11 /* Pods.xcconfig */,
-				F674ECC1765044AA85FA0265 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +265,9 @@
 				796BB5AC1649A97B00474042 /* HRKUpdateCollectionCell.xib */,
 				796BB5A91649A96500474042 /* HRKUpdateCollectionCell.h */,
 				796BB5AA1649A96500474042 /* HRKUpdateCollectionCell.m */,
+				7960F074164A4CB800AD51E0 /* HRKUpdateHeaderView.xib */,
+				7960F06F164A4C5300AD51E0 /* HRKUpdateHeaderView.h */,
+				7960F070164A4C5300AD51E0 /* HRKUpdateHeaderView.m */,
 			);
 			name = Views;
 			path = Heroku/Code;
@@ -380,6 +384,7 @@
 				792F4D3D1648AAA1003A3D09 /* circle.png in Resources */,
 				792F4D3E1648AAA1003A3D09 /* circle@2x.png in Resources */,
 				796BB5AD1649A97B00474042 /* HRKUpdateCollectionCell.xib in Resources */,
+				7960F075164A4CB800AD51E0 /* HRKUpdateHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +457,7 @@
 				796BB5A71649A78E00474042 /* HRKUpdatesViewController.m in Sources */,
 				796BB5AB1649A96500474042 /* HRKUpdateCollectionCell.m in Sources */,
 				796BB5B01649AA4500474042 /* HRKUpdatesLayout.m in Sources */,
+				7960F071164A4C5300AD51E0 /* HRKUpdateHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +526,6 @@
 		};
 		790247EF16374A3000B912C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F674ECC1765044AA85FA0265 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Heroku/Heroku-Prefix.pch";
@@ -532,7 +537,6 @@
 		};
 		790247F016374A3000B912C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F674ECC1765044AA85FA0265 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Heroku/Heroku-Prefix.pch";

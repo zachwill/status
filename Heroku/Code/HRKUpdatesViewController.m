@@ -12,6 +12,7 @@
 #import "Update.h"
 #import "HRKUpdatesLayout.h"
 #import "HRKUpdateCollectionCell.h"
+#import "HRKUpdateHeaderView.h"
 #import "HRKTheme.h"
 
 // ***************************************************************************
@@ -27,6 +28,7 @@ enum UIAlertViewButton {
 };
 
 static NSString * const kUpdateCellIdentifier = @"Update";
+static NSString * const kUpdatesHeaderIdentifier = @"Updates Header";
 static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents/";
 
 // ***************************************************************************
@@ -47,6 +49,10 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
     UINib *nib = [UINib nibWithNibName:@"HRKUpdateCollectionCell" bundle:nil];
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:kUpdateCellIdentifier];
     self.collectionView.backgroundColor = [HRKTheme darkBackgroundColor];
+    
+    // Issue header
+    UINib *header = [UINib nibWithNibName:@"HRKUpdateHeaderView" bundle:nil];
+    [self.collectionView registerNib:header forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kUpdatesHeaderIdentifier];
     
     // Gesture Recognizer
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swiped:)];
@@ -74,6 +80,21 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
     cell.backgroundColor = [HRKTheme grayColor];
     cell.update = update;
     return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
+           viewForSupplementaryElementOfKind:(NSString *)kind
+                                 atIndexPath:(NSIndexPath *)indexPath
+{
+    if (kind == UICollectionElementKindSectionHeader) {
+        HRKUpdateHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
+                                                                         withReuseIdentifier:kUpdatesHeaderIdentifier
+                                                                                forIndexPath:indexPath];
+        Issue *issue = [self.updates[0] issue];
+        header.issueName.text = issue.title;
+        return header;
+    }
+    return nil;
 }
 
 #pragma mark - UICollectionViewDelegate
