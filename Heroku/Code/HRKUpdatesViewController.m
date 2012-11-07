@@ -60,10 +60,6 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
     [self.collectionView addGestureRecognizer:swipe];
 }
 
-- (void)layoutSubviews {
-   NSLog(@"%@", @(self.collectionView.contentSize.height));
-}
-
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
