@@ -16,28 +16,28 @@
 }
 
 + (UIColor *)darkBackgroundColor {
-    // #1b1b24
-    return [UIColor colorWithRed:0.106 green:0.106 blue:0.141 alpha:1.000];
+    // #290a2a
+    return [UIColor colorWithRed:0.161 green:0.039 blue:0.165 alpha:1.000];
 }
 
 + (UIColor *)orangeColor {
-    // #ffa500
-    return [UIColor colorWithRed:1.000 green:0.647 blue:0.000 alpha:1.000];
+    // #efbf56
+    return [UIColor colorWithRed:0.937 green:0.749 blue:0.337 alpha:1.000];
 }
 
 + (UIColor *)purpleColor {
-    // #29254d
-    return [UIColor colorWithRed:0.161 green:0.145 blue:0.302 alpha:1.000];
+    // #33153b
+    return [UIColor colorWithRed:0.200 green:0.082 blue:0.231 alpha:1.000];
 }
 
 + (UIColor *)grayColor {
-    // #282936
-    return [UIColor colorWithRed:0.157 green:0.161 blue:0.212 alpha:1.000];
+    // #351a38
+    return [UIColor colorWithRed:0.208 green:0.102 blue:0.220 alpha:1.000];
 }
 
 + (UIColor *)textColor {
-    // #8577d6
-    return [UIColor colorWithRed:0.522 green:0.467 blue:0.839 alpha:1.000];
+    // #9b9aba
+    return [UIColor colorWithRed:0.467 green:0.396 blue:0.478 alpha:1.000];
 }
 
 + (void)applyCustomStyleSheet {

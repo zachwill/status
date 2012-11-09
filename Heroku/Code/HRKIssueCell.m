@@ -15,20 +15,10 @@
 
 @implementation HRKIssueCell
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (!self) {
-        return nil;
-    }
-
-    self.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-    return self;
-}
-
 - (void)applyStyles {
     self.layer.cornerRadius = 3;
     self.backgroundColor = [HRKTheme grayColor];
+    self.duration.textColor = [HRKTheme orangeColor];
 }
 
 - (void)setIssue:(Issue *)issue {
