@@ -16,8 +16,8 @@
 }
 
 + (UIColor *)darkBackgroundColor {
-    // #290a2a
-    return [UIColor colorWithRed:0.161 green:0.039 blue:0.165 alpha:1.000];
+    // #230824
+    return [UIColor colorWithRed:0.137 green:0.031 blue:0.141 alpha:1.000];
 }
 
 + (UIColor *)orangeColor {
