@@ -17,7 +17,7 @@
 
 // ***************************************************************************
 
-@interface HRKUpdatesViewController () <UIAlertViewDelegate>
+@interface HRKUpdatesViewController ()
 
 @end
 
