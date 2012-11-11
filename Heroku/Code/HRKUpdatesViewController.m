@@ -35,6 +35,8 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
 
 @implementation HRKUpdatesViewController
 
+#pragma mark - UIViewController
+
 - (id)initWithIssue:(Issue *)issue {
     self = [super initWithCollectionViewLayout:[[HRKUpdatesLayout alloc] init]];
     if (!self) {
@@ -104,28 +106,6 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
     CGSize constraint = CGSizeMake(280, MAXFLOAT);
     CGSize text = [update.contents sizeWithFont:[UIFont systemFontOfSize:12.0f] constrainedToSize:constraint];
     return CGSizeMake(300, 80 + text.height);
-}
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    [[[UIAlertView alloc] initWithTitle:@"Open in Safari"
-                                message:@"Open Heroku Status in Safari?"
-                               delegate:self
-                      cancelButtonTitle:@"Cancel"
-                      otherButtonTitles:@"OK", nil] show];
-}
-
-#pragma mark - UIAlertViewDelegate
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    static Update *update = nil;
-    update = self.updates[0];
-    NSURL *heroku  = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", kHerokuStatusURL, update.incident_id]];
-    
-    switch (buttonIndex) {
-        case UIAlertViewOkButton:
-            [[UIApplication sharedApplication] openURL:heroku];
-            break;
-    }
 }
 
 #pragma mark - UIGestureRecognizer

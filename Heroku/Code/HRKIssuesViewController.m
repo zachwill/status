@@ -33,6 +33,8 @@ static NSString * const kHeaderIdentifier = @"Header";
 
 @implementation HRKIssuesViewController
 
+#pragma mark - UIViewController
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -62,6 +64,7 @@ static NSString * const kHeaderIdentifier = @"Header";
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     refreshControl.tintColor = [HRKTheme purpleColor];
+    NSLog(@"%@", refreshControl);
     [refreshControl addTarget:self action:@selector(refetchData) forControlEvents:UIControlEventValueChanged];
     _refreshControl = refreshControl;
     return _refreshControl;
