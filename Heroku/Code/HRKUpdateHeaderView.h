@@ -11,5 +11,6 @@
 @interface HRKUpdateHeaderView : UICollectionReusableView
 
 @property (nonatomic, weak) IBOutlet UILabel *issueName;
+@property (nonatomic, weak) IBOutlet UIImageView *headerBar;
 
 @end

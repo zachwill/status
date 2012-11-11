@@ -7,17 +7,18 @@
 //
 
 #import "HRKUpdateHeaderView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation HRKUpdateHeaderView
 
-- (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (!self) {
-        return nil;
-    }
-    
-    self.issueName.textAlignment = NSTextAlignmentCenter;
-    return self;
+- (void)drawRect:(CGRect)rect {
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.headerBar.bounds
+                                               byRoundingCorners:UIRectCornerTopLeft|UIRectCornerTopRight
+                                                     cornerRadii:CGSizeMake(3, 3)];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.headerBar.bounds;
+    maskLayer.path = path.CGPath;
+    self.headerBar.layer.mask = maskLayer;
 }
 
 @end
