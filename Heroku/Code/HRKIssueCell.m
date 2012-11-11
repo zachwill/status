@@ -17,7 +17,7 @@
 
 - (void)applyStyles {
     self.layer.cornerRadius = 3;
-    self.backgroundColor = [HRKTheme grayColor];
+    self.backgroundColor = [HRKTheme contentBackgroundColor];
     self.duration.textColor = [HRKTheme orangeColor];
 }
 

@@ -76,7 +76,7 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     HRKUpdateCollectionCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kUpdateCellIdentifier forIndexPath:indexPath];
     Update *update = self.updates[indexPath.item];
-    cell.backgroundColor = [HRKTheme grayColor];
+    cell.backgroundColor = [HRKTheme contentBackgroundColor];
     cell.update = update;
     return cell;
 }
@@ -105,7 +105,7 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
     Update *update = self.updates[indexPath.item];
     CGSize constraint = CGSizeMake(280, MAXFLOAT);
     CGSize text = [update.contents sizeWithFont:[UIFont systemFontOfSize:12.0f] constrainedToSize:constraint];
-    return CGSizeMake(300, 80 + text.height);
+    return CGSizeMake(300, 75 + text.height);
 }
 
 #pragma mark - UIGestureRecognizer

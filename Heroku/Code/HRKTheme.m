@@ -30,7 +30,7 @@
     return [UIColor colorWithRed:0.200 green:0.082 blue:0.231 alpha:1.000];
 }
 
-+ (UIColor *)grayColor {
++ (UIColor *)contentBackgroundColor {
     // #351a38
     return [UIColor colorWithRed:0.208 green:0.102 blue:0.220 alpha:1.000];
 }

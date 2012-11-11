@@ -8,6 +8,10 @@
 
 #import "HRKUpdatesLayout.h"
 
+static const CGFloat kCellWidth = 300;
+static const CGFloat kCellHeight = 175;
+static const CGFloat kHeaderHeight = 55;
+
 @implementation HRKUpdatesLayout
 
 - (id)init {
@@ -16,10 +20,10 @@
         return nil;
     }
     
-    self.itemSize = CGSizeMake(300, 175);
-    self.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    self.itemSize = CGSizeMake(kCellWidth, kCellHeight);
+    self.sectionInset = UIEdgeInsetsMake(0, 10, 10, 10);
     self.minimumLineSpacing = 1;
-    self.headerReferenceSize = CGSizeMake(300, 75);
+    self.headerReferenceSize = CGSizeMake(kCellWidth, kHeaderHeight);
     return self;
 }
 

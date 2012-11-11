@@ -10,4 +10,14 @@
 
 @implementation HRKUpdateHeaderView
 
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (!self) {
+        return nil;
+    }
+    
+    self.issueName.textAlignment = NSTextAlignmentCenter;
+    return self;
+}
+
 @end
