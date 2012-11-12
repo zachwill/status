@@ -65,27 +65,30 @@ static NSDate * HRKISO8601DateFormatter(NSString *string) {
     NSMutableDictionary *mutableProperties = [[super attributesForRepresentation:representation
                                                                         ofEntity:entity
                                                                     fromResponse:response] mutableCopy];
+
+    // Created and updated times.
+    NSDate *created, *updated;
+    if ([entity.name isEqualToString:@"Issue"] || [entity.name isEqualToString:@"Update"]) {
+        created = HRKISO8601DateFormatter(representation[@"created_at"]);
+        mutableProperties[@"created_at"] = created;
+        updated = HRKISO8601DateFormatter(representation[@"updated_at"]);
+        mutableProperties[@"updated_at"] = updated;
+    }
+
+    // Unique properties to each entity.
     if ([entity.name isEqualToString:@"Issue"]) {
         mutableProperties[@"issue_id"]   = representation[@"id"];
-        NSDate *created = HRKISO8601DateFormatter(representation[@"created_at"]);
-        mutableProperties[@"created_at"] = created;
-        NSDate *updated = HRKISO8601DateFormatter(representation[@"updated_at"]);
-        mutableProperties[@"updated_at"] = updated;
         NSCalendar *calendar = [NSCalendar currentCalendar];
         NSDateComponents *duration = [calendar components:NSHourCalendarUnit|NSMinuteCalendarUnit fromDate:created toDate:updated options:0];
         mutableProperties[@"duration"] = duration;
         // Used for sections.
-        unsigned int calendarOptions = NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit;
-        NSDateComponents *dayComponents = [calendar components:calendarOptions fromDate:created];
-        NSDate *day = [calendar dateFromComponents:dayComponents];
+        unsigned int dayOptions = NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit;
+        NSDate *day = [calendar dateFromComponents:[calendar components:dayOptions fromDate:created]];
         mutableProperties[@"day"] = day;
     } else if ([entity.name isEqualToString:@"Update"]) {
         mutableProperties[@"update_id"]  = representation[@"id"];
-        NSDate *created = HRKISO8601DateFormatter(representation[@"created_at"]);
-        mutableProperties[@"created_at"] = created;
-        NSDate *updated = HRKISO8601DateFormatter(representation[@"updated_at"]);
-        mutableProperties[@"updated_at"] = updated;
     }
+
     return mutableProperties;
 }
 
