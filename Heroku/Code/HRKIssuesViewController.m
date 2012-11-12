@@ -8,6 +8,7 @@
 
 #import "HRKIssuesViewController.h"
 #import <CoreData/CoreData.h>
+#import "AFNetworking.h"
 #import "HRKDataModel.h"
 #import "Issue.h"
 #import "HRKTheme.h"
@@ -28,6 +29,7 @@
 
 static NSString * const kReuseIdentifier  = @"Issue";
 static NSString * const kHeaderIdentifier = @"Header";
+static NSString * const kHerokuCurrentStatusURL = @"https://status.heroku.com/api/v3/current-status";
 
 // ***************************************************************************
 
@@ -76,6 +78,8 @@ static NSString * const kHeaderIdentifier = @"Header";
 
 - (void)refetchData {
     [self.fetchedResultsController performFetch:nil];
+    [self checkCurrentHerokuStatus];
+    
     if ([self.refreshControl isRefreshing]) {
         [self.refreshControl endRefreshing];
     }
@@ -138,6 +142,19 @@ static NSString * const kHeaderIdentifier = @"Header";
     Issue *issue = [self.fetchedResultsController objectAtIndexPath:indexPath];
     HRKUpdatesViewController *updatesVC = [[HRKUpdatesViewController alloc] initWithIssue:issue];
     [self.navigationController pushViewController:updatesVC animated:YES];
+}
+
+#pragma mark - AFNetworking
+
+- (void)checkCurrentHerokuStatus {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:kHerokuCurrentStatusURL]];
+        AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+            NSDictionary *status = [JSON objectForKey:@"status"];
+            NSLog(@"%@", status);
+        } failure:nil];
+        [operation start];
+    });
 }
 
 @end

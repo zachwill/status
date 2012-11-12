@@ -17,12 +17,14 @@ PODS:
 - FormatterKit/URLRequestFormatter (1.0.1)
 - FormatterKit/UnitOfInformationFormatter (1.0.1)
 - Reachability (3.0.0)
+- TTTAttributedLabel (1.4.0)
 
 DEPENDENCIES:
 - AFIncrementalStore (>= 0.3)
 - AFNetworking (= 1.0.1)
 - FormatterKit
 - Reachability (from `https://github.com/tonymillion/Reachability.git')
+- TTTAttributedLabel
 
 EXTERNAL SOURCES:
   Reachability:
@@ -39,5 +41,6 @@ SPEC CHECKSUMS:
   FormatterKit/URLRequestFormatter: 3592a4f49496927ab88318c9bbe84f1088518b7b
   FormatterKit/UnitOfInformationFormatter: 3592a4f49496927ab88318c9bbe84f1088518b7b
   Reachability: f5ae7c17d68794bb44a72f6f895264df2e6eca34
+  TTTAttributedLabel: 3ed39ff06e249ee47467789b6b96bd7bb9597ec8
 
 COCOAPODS: 0.16.0.rc2

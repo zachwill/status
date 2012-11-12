@@ -6,6 +6,7 @@ pod "AFIncrementalStore", ">= 0.3"
 
 # Formatting
 pod "FormatterKit"
+pod "TTTAttributedLabel"
 
 # Reachability
 pod "Reachability", :git => "https://github.com/tonymillion/Reachability.git"
