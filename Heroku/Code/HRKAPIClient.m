@@ -8,11 +8,16 @@
 
 #import "HRKAPIClient.h"
 #import <CoreData/CoreData.h>
-#import "HRKFormatter.h"
 
 // ***************************************************************************
 
 static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
+
+static NSDate * HRKISO8601DateFormatter(NSString *string) {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZ";
+    return [formatter dateFromString:string];
+}
 
 // ***************************************************************************
 
@@ -62,26 +67,23 @@ static NSString * const kHerokuBaseURL = @"https://status.heroku.com/api/v3/";
                                                                     fromResponse:response] mutableCopy];
     if ([entity.name isEqualToString:@"Issue"]) {
         mutableProperties[@"issue_id"]   = representation[@"id"];
-        NSDate *created = [[HRKFormatter sharedFormatter] dateFromString:representation[@"created_at"]];
+        NSDate *created = HRKISO8601DateFormatter(representation[@"created_at"]);
         mutableProperties[@"created_at"] = created;
-        NSDate *updated = [[HRKFormatter sharedFormatter] dateFromString:representation[@"updated_at"]];
+        NSDate *updated = HRKISO8601DateFormatter(representation[@"updated_at"]);
         mutableProperties[@"updated_at"] = updated;
         NSCalendar *calendar = [NSCalendar currentCalendar];
-        NSDateComponents *duration = [calendar components:NSHourCalendarUnit|NSMinuteCalendarUnit
-                                                 fromDate:created
-                                                   toDate:updated
-                                                  options:0];
+        NSDateComponents *duration = [calendar components:NSHourCalendarUnit|NSMinuteCalendarUnit fromDate:created toDate:updated options:0];
         mutableProperties[@"duration"] = duration;
         // Used for sections.
-        NSDateComponents *dayComponents = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
-                                            fromDate:created];
+        unsigned int calendarOptions = NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit;
+        NSDateComponents *dayComponents = [calendar components:calendarOptions fromDate:created];
         NSDate *day = [calendar dateFromComponents:dayComponents];
         mutableProperties[@"day"] = day;
     } else if ([entity.name isEqualToString:@"Update"]) {
         mutableProperties[@"update_id"]  = representation[@"id"];
-        NSDate *created = [[HRKFormatter sharedFormatter] dateFromString:representation[@"created_at"]];
+        NSDate *created = HRKISO8601DateFormatter(representation[@"created_at"]);
         mutableProperties[@"created_at"] = created;
-        NSDate *updated = [[HRKFormatter sharedFormatter] dateFromString:representation[@"updated_at"]];
+        NSDate *updated = HRKISO8601DateFormatter(representation[@"updated_at"]);
         mutableProperties[@"updated_at"] = updated;
     }
     return mutableProperties;
