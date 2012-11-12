@@ -39,6 +39,7 @@ static NSString * const kHeaderIdentifier = @"Header";
 {
     [super viewDidLoad];
     self.collectionView.backgroundColor = [HRKTheme darkBackgroundColor];
+    self.collectionView.alwaysBounceVertical = YES;
     UINib *collectionViewCell = [UINib nibWithNibName:@"HRKIssueCell" bundle:nil];
     [self.collectionView registerNib:collectionViewCell forCellWithReuseIdentifier:kReuseIdentifier];
     
@@ -51,7 +52,8 @@ static NSString * const kHeaderIdentifier = @"Header";
 }
 
 - (void)customBackButton {
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Issues" style:UIBarButtonItemStylePlain target:nil action:nil];
+    UIImage *arrow = [UIImage imageNamed:@"arrow.png"];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:arrow style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
 }
 

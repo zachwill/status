@@ -47,7 +47,7 @@
     [[UINavigationBar appearance] setShadowImage:[UIImage imageNamed:@"nav_shadow"]];
     
     // Back Button
-    UIImage *backbutton = [[UIImage imageNamed:@"back.png"] stretchableImageWithLeftCapWidth:14 topCapHeight:0];
+    UIImage *backbutton = [[UIImage imageNamed:@"back.png"] stretchableImageWithLeftCapWidth:13 topCapHeight:0];
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backbutton
                                                       forState:UIControlStateNormal
                                                     barMetrics:UIBarMetricsDefault];
