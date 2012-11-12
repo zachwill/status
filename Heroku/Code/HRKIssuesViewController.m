@@ -68,7 +68,6 @@ static NSString * const kHerokuCurrentStatusURL = @"https://status.heroku.com/ap
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     refreshControl.tintColor = [HRKTheme purpleColor];
-    NSLog(@"%@", refreshControl);
     [refreshControl addTarget:self action:@selector(refetchData) forControlEvents:UIControlEventValueChanged];
     _refreshControl = refreshControl;
     return _refreshControl;
