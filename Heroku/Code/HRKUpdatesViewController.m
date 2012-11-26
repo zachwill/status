@@ -56,6 +56,7 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
     // Issue header
     UINib *header = [UINib nibWithNibName:@"HRKUpdateHeaderView" bundle:nil];
     [self.collectionView registerNib:header forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kUpdatesHeaderIdentifier];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
     
     // Gesture Recognizer
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swiped:)];

@@ -23,6 +23,8 @@
 		792F4D331648A5E0003A3D09 /* HRKCurrentStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 792F4D321648A5E0003A3D09 /* HRKCurrentStatus.m */; };
 		792F4D3D1648AAA1003A3D09 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 792F4D3B1648AAA1003A3D09 /* circle.png */; };
 		792F4D3E1648AAA1003A3D09 /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 792F4D3C1648AAA1003A3D09 /* circle@2x.png */; };
+		793FF39F1664138F00DD9F39 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 793FF39D1664138F00DD9F39 /* button.png */; };
+		793FF3A01664138F00DD9F39 /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 793FF39E1664138F00DD9F39 /* button@2x.png */; };
 		795451C2164204A700C182FB /* HRKTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 795451C1164204A700C182FB /* HRKTheme.m */; };
 		795451CD1642601600C182FB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CB1642601600C182FB /* back.png */; };
 		795451CE1642601600C182FB /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 795451CC1642601600C182FB /* back@2x.png */; };
@@ -88,6 +90,8 @@
 		792F4D321648A5E0003A3D09 /* HRKCurrentStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKCurrentStatus.m; sourceTree = "<group>"; };
 		792F4D3B1648AAA1003A3D09 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		792F4D3C1648AAA1003A3D09 /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle@2x.png"; sourceTree = "<group>"; };
+		793FF39D1664138F00DD9F39 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		793FF39E1664138F00DD9F39 /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button@2x.png"; sourceTree = "<group>"; };
 		794590081642E8070095B495 /* Heroku 1.0a.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Heroku 1.0a.xcdatamodel"; sourceTree = "<group>"; };
 		795451C0164204A700C182FB /* HRKTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKTheme.h; sourceTree = "<group>"; };
 		795451C1164204A700C182FB /* HRKTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKTheme.m; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 				792F4D2B164888AD003A3D09 /* arrow@2x.png */,
 				795451CB1642601600C182FB /* back.png */,
 				795451CC1642601600C182FB /* back@2x.png */,
+				793FF39D1664138F00DD9F39 /* button.png */,
+				793FF39E1664138F00DD9F39 /* button@2x.png */,
 				792F4D3B1648AAA1003A3D09 /* circle.png */,
 				792F4D3C1648AAA1003A3D09 /* circle@2x.png */,
 				79BF7EC016503ABC004E95C1 /* headerbar.png */,
@@ -402,6 +408,8 @@
 				79714A7716505958000FE97C /* Default.png in Resources */,
 				79714A7816505958000FE97C /* Default@2x.png in Resources */,
 				79714A7A165059A3000FE97C /* Default-568h@2x.png in Resources */,
+				793FF39F1664138F00DD9F39 /* button.png in Resources */,
+				793FF3A01664138F00DD9F39 /* button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

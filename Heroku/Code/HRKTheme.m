@@ -42,13 +42,18 @@
 
 + (void)applyCustomStyleSheet {
     // Navigation
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav"]
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav.png"]
                                        forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setShadowImage:[UIImage imageNamed:@"nav_shadow"]];
+    [[UINavigationBar appearance] setShadowImage:[UIImage imageNamed:@"nav_shadow.png"]];
     
     // Back Button
     UIImage *backbutton = [[UIImage imageNamed:@"back.png"] stretchableImageWithLeftCapWidth:13 topCapHeight:0];
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backbutton
+                                                      forState:UIControlStateNormal
+                                                    barMetrics:UIBarMetricsDefault];
+    
+    // Bar Button
+    [[UIBarButtonItem appearance] setBackgroundImage:[UIImage imageNamed:@"button.png"]
                                                       forState:UIControlStateNormal
                                                     barMetrics:UIBarMetricsDefault];
 }
