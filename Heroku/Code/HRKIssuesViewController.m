@@ -49,6 +49,8 @@ static NSString * const kHerokuCurrentStatusURL = @"https://status.heroku.com/ap
     [self.collectionView registerNib:header forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kHeaderIdentifier];
     
     [self.collectionView addSubview:self.refreshControl];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"heroku.png"]];
+
     [self refetchData];
     [self customBackButton];
 }
