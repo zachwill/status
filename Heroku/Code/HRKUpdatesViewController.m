@@ -42,6 +42,8 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
     if (!self) {
         return nil;
     }
+
+    self.issue = issue;
     self.updates = issue.updates;
     return self;
 }
@@ -56,7 +58,9 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
     // Issue header
     UINib *header = [UINib nibWithNibName:@"HRKUpdateHeaderView" bundle:nil];
     [self.collectionView registerNib:header forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kUpdatesHeaderIdentifier];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                                           target:self
+                                                                                           action:@selector(shareIssue:)];
     
     // Gesture Recognizer
     UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swiped:)];
@@ -113,6 +117,21 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
 
 - (void)swiped:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - UIActivity
+
+- (void)shareIssue:(id)sender {
+    NSArray *activityItems = @[[NSURL URLWithString:self.issue.href]];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    activityVC.excludedActivityTypes = @[
+        UIActivityTypeAssignToContact,
+        UIActivityTypeCopyToPasteboard,
+        UIActivityTypePostToFacebook,
+        UIActivityTypePostToWeibo,
+        UIActivityTypePrint
+    ];
+    [self presentViewController:activityVC animated:YES completion:nil];
 }
 
 @end

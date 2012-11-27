@@ -12,6 +12,7 @@
 
 @interface HRKUpdatesViewController : UICollectionViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
+@property (nonatomic, strong) Issue *issue;
 @property (nonatomic, strong) NSOrderedSet *updates;
 
 - (id)initWithIssue:(Issue *)issue;
