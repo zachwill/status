@@ -123,8 +123,8 @@ static NSString * const kHerokuStatusURL = @"https://status.heroku.com/incidents
 #pragma mark - UIActivity
 
 - (void)shareIssue:(id)sender {
-    NSArray *activityItems = @[[NSURL URLWithString:self.issue.href]];
-    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    NSArray *items = @[[NSURL URLWithString:[NSString stringWithFormat:@"https://status.heroku.com/incidents/%@", self.issue.issue_id]]];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:nil];
     activityVC.excludedActivityTypes = @[
         UIActivityTypeAssignToContact,
         UIActivityTypeCopyToPasteboard,
